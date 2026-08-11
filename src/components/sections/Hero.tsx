@@ -4,7 +4,7 @@ import { ArtworkCartel } from "./hero/ArtworkCartel"
 
 export function Hero() {
   return (
-    <section className="relative pt-36 pb-20 md:pt-48 md:pb-28 bg-white">
+    <section id="top" className="relative pt-36 pb-20 md:pt-48 md:pb-28 bg-white">
       <div className="max-w-5xl mx-auto px-6 text-center">
         <p className="text-xs font-semibold uppercase tracking-[0.3em] text-accent-gold mb-6">{SITE.dates}</p>
 

@@ -7,11 +7,12 @@ export function Header() {
   return (
     <header className="fixed top-0 left-0 w-full z-50 bg-white/90 backdrop-blur-md border-b border-gray-100">
       <div className="max-w-7xl mx-auto px-8 h-20 flex items-center justify-between">
-        <div className="flex items-center space-x-4">
-          <span className="text-xs uppercase tracking-[0.25em] font-medium text-gallery-900">
-            INREALART <span className="text-accent-gold font-light">|</span> GALERIE LEADOUZE
-          </span>
-        </div>
+        <Link
+          href="#top"
+          className="text-xs uppercase tracking-[0.25em] font-medium text-gallery-900"
+        >
+          INREALART <span className="text-accent-gold font-light">|</span> GALERIE LEADOUZE
+        </Link>
 
         <nav className="hidden lg:flex items-center space-x-10 text-xs uppercase tracking-[0.15em] font-medium text-gray-500">
           {navLinks.map((link) => (
