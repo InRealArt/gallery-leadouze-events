@@ -1,11 +1,18 @@
-import { ArtworkSvg } from "./ArtworkSvg"
+import Image from "next/image"
 
 export function ArtworkCartel() {
   return (
     <div className="max-w-4xl mx-auto bg-gallery-50 p-6 md:p-10 luxury-border">
       <div className="relative bg-white p-4 luxury-border shadow-sm">
         <div className="relative w-full aspect-16/10 overflow-hidden bg-gray-200">
-          <ArtworkSvg />
+          <Image
+            src="/images/artworks/featured/pontecorvo_artwork.webp"
+            alt="Pontecorvo, Passants et Perspectives, 2023, huile sur toile"
+            fill
+            priority
+            sizes="(min-width: 1024px) 900px, 100vw"
+            className="object-cover"
+          />
         </div>
 
         <div className="pt-6 pb-2 text-left flex flex-col md:flex-row justify-between items-start md:items-end gap-4 border-t border-gray-100 mt-4">

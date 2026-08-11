@@ -9,7 +9,7 @@ const VARIANT_CLASSES = {
 
 type ButtonVariant = keyof typeof VARIANT_CLASSES
 
-const BASE_CLASSES = "px-9 py-4 text-xs font-medium uppercase tracking-[0.2em] inline-block text-center"
+const BASE_CLASSES = "px-9 py-4 text-xs font-medium uppercase tracking-[0.2em] text-center"
 
 interface LinkButtonProps extends AnchorHTMLAttributes<HTMLAnchorElement> {
   variant?: ButtonVariant
@@ -36,7 +36,7 @@ export function LinkButton({
   }
 
   return (
-    <Link href={href} className={classes}>
+    <Link href={href} className={classes} {...props}>
       {children}
     </Link>
   )

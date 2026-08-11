@@ -29,7 +29,10 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="fr" className={`${plusJakartaSans.variable} ${playfairDisplay.variable}`}>
+    <html
+      lang="fr"
+      className={`${plusJakartaSans.variable} ${playfairDisplay.variable} scroll-smooth`}
+    >
       <body className="antialiased selection:bg-gallery-900 selection:text-white font-sans">
         {children}
       </body>

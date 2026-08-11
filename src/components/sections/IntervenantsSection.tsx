@@ -12,12 +12,12 @@ export function IntervenantsSection() {
           {speakers.map((speaker) => (
             <div key={speaker.name} className="luxury-card p-8 text-center flex flex-col justify-between">
               <div>
-                <div className="relative w-16 h-16 mx-auto mb-6 rounded-full overflow-hidden bg-gallery-50 border border-gray-200">
+                <div className="relative w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden bg-gallery-50 border border-gray-200">
                   <Image
                     src={speaker.photo}
                     alt={speaker.name}
                     fill
-                    sizes="64px"
+                    sizes="128px"
                     className="object-cover"
                   />
                 </div>

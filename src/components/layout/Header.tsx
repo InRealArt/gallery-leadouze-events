@@ -1,6 +1,7 @@
 import Link from "next/link"
 import { navLinks } from "@/data/event"
 import { LinkButton } from "@/components/ui/Button"
+import { MobileMenu } from "./MobileMenu"
 
 export function Header() {
   return (
@@ -20,9 +21,12 @@ export function Header() {
           ))}
         </nav>
 
-        <LinkButton href="#reservation" className="px-6 py-2.5 shadow-sm">
-          Accès Privé
-        </LinkButton>
+        <div className="flex items-center gap-6">
+          <LinkButton href="#reservation" className="hidden lg:inline-block px-6 py-2.5 shadow-sm">
+            Accès Privé
+          </LinkButton>
+          <MobileMenu links={navLinks} />
+        </div>
       </div>
     </header>
   )

@@ -4,5 +4,5 @@ export const SITE = {
   description:
     "Exposition rétrospective Pontecorvo à Paris, prolongée par trois soirées exclusives sur invitation pour CGP, avocats et family offices.",
   dates: "Paris • 15, 16 & 17 Octobre",
-  simulatorUrl: "https://www.inrealart.com/",
+  simulatorUrl: "https://www.inrealart.com//heritage-art-simulator",
 } as const
