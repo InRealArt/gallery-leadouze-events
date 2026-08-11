@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-plus-jakarta-sans), sans-serif;
+  --font-serif-title: var(--font-playfair-display), serif;
+
+  --color-gallery-50: #faf9f8;
+  --color-gallery-100: #f5f4f0;
+  --color-gallery-200: #e6e4df;
+  --color-gallery-800: #1c1a17;
+  --color-gallery-900: #0f0e0d;
+
+  --color-accent-gold: #b8860b;
+  --color-accent-gold-light: #d4af37;
+}
+
+body {
+  background-color: #ffffff;
+  color: #0f0e0d;
+  overflow-x: hidden;
+  letter-spacing: -0.01em;
+}
+
+.font-serif-title {
+  font-family: var(--font-serif-title);
+}
+
+.luxury-border {
+  border: 1px solid rgba(15, 14, 13, 0.08);
+}
+
+.luxury-card {
+  background: #ffffff;
+  border: 1px solid rgba(15, 14, 13, 0.08);
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.luxury-card:hover {
+  border-color: #b8860b;
+  transform: translateY(-2px);
+  box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.05);
+}
+
+.btn-perrotin {
+  background-color: #0f0e0d;
+  color: #ffffff;
+  transition: all 0.3s ease;
+}
+
+.btn-perrotin:hover {
+  background-color: #b8860b;
+  color: #ffffff;
+}
+
+.btn-perrotin-outline {
+  background-color: transparent;
+  color: #0f0e0d;
+  border: 1px solid #0f0e0d;
+  transition: all 0.3s ease;
+}
+
+.btn-perrotin-outline:hover {
+  border-color: #b8860b;
+  color: #b8860b;
+}

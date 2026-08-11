@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="fr" class="light">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>InRealArt x Galerie Leadouze | Exposition Pontecorvo</title>
+   <!-- Tailwind CSS CDN -->
+   <script src="https://cdn.tailwindcss.com"></script>
+   <!-- Lucide Icons -->
+   <script src="https://unpkg.com/lucide@latest"></script>
+   <script>
+       tailwind.config = {
+           darkMode: 'class',
+           theme: {
+               extend: {
+                   colors: {
+                       gallery: {
+                           50: '#FAF9F8',
+                           100: '#F5F4F0',
+                           200: '#E6E4DF',
+                           800: '#1C1A17',
+                           900: '#0F0E0D',
+                       },
+                       accent: {
+                           gold: '#B8860B',
+                           goldLight: '#D4AF37',
+                       }
+                   },
+                   fontFamily: {
+                       sans: ['Plus Jakarta Sans', 'sans-serif'],
+                       serif: ['Playfair Display', 'serif']
+                   }
+               }
+           }
+       }
+   </script>
+   <!-- Google Fonts -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  
+   <style>
+       body {
+           background-color: #FFFFFF;
+           color: #0F0E0D;
+           font-family: 'Plus Jakarta Sans', sans-serif;
+           overflow-x: hidden;
+           letter-spacing: -0.01em;
+       }
+       .font-serif-title {
+           font-family: 'Playfair Display', serif;
+       }
+       .luxury-border {
+           border: 1px solid rgba(15, 14, 13, 0.08);
+       }
+       .luxury-card {
+           background: #FFFFFF;
+           border: 1px solid rgba(15, 14, 13, 0.08);
+           transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+       }
+       .luxury-card:hover {
+           border-color: #B8860B;
+           transform: translateY(-2px);
+           box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.05);
+       }
+       .btn-perrotin {
+           background-color: #0F0E0D;
+           color: #FFFFFF;
+           transition: all 0.3s ease;
+       }
+       .btn-perrotin:hover {
+           background-color: #B8860B;
+           color: #FFFFFF;
+       }
+       .btn-perrotin-outline {
+           background-color: transparent;
+           color: #0F0E0D;
+           border: 1px solid #0F0E0D;
+           transition: all 0.3s ease;
+       }
+       .btn-perrotin-outline:hover {
+           border-color: #B8860B;
+           color: #B8860B;
+       }
+   </style>
+</head>
+<body class="antialiased selection:bg-gallery-900 selection:text-white">
+
+
+   <!-- Header Style Galerie Ultra-Luxe -->
+   <header class="fixed top-0 left-0 w-full z-50 bg-white/90 backdrop-blur-md border-b border-gray-100">
+       <div class="max-w-7xl mx-auto px-8 h-20 flex items-center justify-between">
+           <div class="flex items-center space-x-4">
+               <span class="text-xs uppercase tracking-[0.25em] font-medium text-gallery-900">
+                   INREALART <span class="text-accent-gold font-light">|</span> GALERIE LEADOUZE
+               </span>
+           </div>
+           <nav class="hidden lg:flex items-center space-x-10 text-xs uppercase tracking-[0.15em] font-medium text-gray-500">
+               <a href="#exposition" class="hover:text-gallery-900 transition-colors">Exposition</a>
+               <a href="#intervenants" class="hover:text-gallery-900 transition-colors">Intervenants</a>
+               <a href="#programme" class="hover:text-gallery-900 transition-colors">Déroulé</a>
+               <a href="#defiscalisation" class="hover:text-gallery-900 transition-colors">Défiscalisation</a>
+               <a href="#faq" class="hover:text-gallery-900 transition-colors">FAQ</a>
+           </nav>
+           <a href="#reservation" class="btn-perrotin px-6 py-2.5 text-[11px] font-medium uppercase tracking-[0.2em]">
+               Accès Privé
+           </a>
+       </div>
+   </header>
+
+
+   <!-- Hero Section / Style Catalogue Perrotin -->
+   <section class="relative pt-36 pb-20 md:pt-48 md:pb-28 bg-white">
+       <div class="max-w-5xl mx-auto px-6 text-center">
+          
+           <p class="text-xs font-semibold uppercase tracking-[0.3em] text-accent-gold mb-6">
+               Paris • 15, 16 & 17 Octobre
+           </p>
+
+
+           <h1 class="text-4xl md:text-6xl lg:text-7xl font-serif-title font-normal tracking-tight leading-[1.1] text-gallery-900 mb-8">
+               Pontecorvo & L'Art d'Investir <br>
+               <span class="italic font-light text-gray-700">en Gestion de Patrimoine</span>
+           </h1>
+
+
+           <p class="text-sm md:text-base text-gray-500 max-w-2xl mx-auto mb-12 font-light leading-relaxed tracking-wide">
+               Une exposition rétrospective majeure ouverte à tous en journée, prolongée par <strong>trois soirées exclusives (19h–22h, sur invitation)</strong> réunissant CGP, avocats et family offices.
+           </p>
+
+
+           <!-- Boutons d'Action -->
+           <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-20">
+               <a href="#reservation" class="btn-perrotin w-full sm:w-auto px-9 py-4 text-xs font-medium uppercase tracking-[0.2em] shadow-sm">
+                   Demander une invitation
+               </a>
+               <a href="#defiscalisation" class="btn-perrotin-outline w-full sm:w-auto px-9 py-4 text-xs font-medium uppercase tracking-[0.2em]">
+                   Simulateur de Défiscalisation
+               </a>
+           </div>
+
+
+           <!-- Cartel de Présentation de la Toile Pontecorvo -->
+           <div class="max-w-4xl mx-auto bg-gallery-50 p-6 md:p-10 luxury-border">
+               <div class="relative bg-white p-4 luxury-border shadow-sm">
+                   <!-- Artwork Container -->
+                   <div class="relative w-full aspect-[16/10] overflow-hidden bg-gray-200">
+                       <svg class="w-full h-full object-cover" viewBox="0 0 1000 600" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+                           <defs>
+                               <linearGradient id="pBg" x1="0%" y1="0%" x2="100%" y2="100%">
+                                   <stop offset="0%" stop-color="#EAEAE8" />
+                                   <stop offset="100%" stop-color="#CCCCCC" />
+                               </linearGradient>
+                               <linearGradient id="pShadow" x1="0%" y1="0%" x2="100%" y2="100%">
+                                   <stop offset="0%" stop-color="#1A1A1A" stop-opacity="0.6" />
+                                   <stop offset="100%" stop-color="#1A1A1A" stop-opacity="0.1" />
+                               </linearGradient>
+                           </defs>
+                           <rect width="1000" height="600" fill="url(#pBg)" />
+                           <line x1="0" y1="200" x2="1000" y2="200" stroke="#C5C5C3" stroke-width="1.5" />
+                           <line x1="0" y1="400" x2="1000" y2="400" stroke="#C5C5C3" stroke-width="1.5" />
+                           <rect x="380" y="0" width="70" height="600" fill="#F0F0EE" opacity="0.5" />
+
+
+                           <!-- Ombres Portées Signature Pontecorvo -->
+                           <polygon points="150,140 60,110 320,100 160,142" fill="url(#pShadow)" />
+                           <polygon points="280,240 70,210 480,195 290,243" fill="url(#pShadow)" />
+                           <polygon points="420,340 120,300 680,280 430,343" fill="url(#pShadow)" />
+                           <polygon points="580,440 220,390 850,360 590,443" fill="url(#pShadow)" />
+                           <polygon points="780,210 470,180 950,170 790,213" fill="url(#pShadow)" />
+
+
+                           <!-- Silhouettes / Figures -->
+                           <circle cx="150" cy="140" r="7" fill="#0F0E0D" />
+                           <circle cx="280" cy="240" r="8" fill="#0F0E0D" />
+                           <circle cx="420" cy="340" r="7" fill="#0F0E0D" />
+                           <circle cx="432" cy="345" r="6" fill="#777777" />
+                           <circle cx="580" cy="440" r="8" fill="#0F0E0D" />
+                           <circle cx="780" cy="210" r="7" fill="#0F0E0D" />
+                       </svg>
+                   </div>
+
+
+                   <!-- Cartel Typographique Style Musée -->
+                   <div class="pt-6 pb-2 text-left flex flex-col md:flex-row justify-between items-start md:items-end gap-4 border-t border-gray-100 mt-4">
+                       <div>
+                           <p class="text-[10px] uppercase tracking-[0.25em] text-accent-gold font-semibold mb-1">Œuvre Vedette</p>
+                           <h3 class="text-xl font-serif-title font-medium text-gallery-900">PONTECORVO</h3>
+                           <p class="text-xs text-gray-500 italic mt-0.5">Passants & Perspectives, 2023 — Huile sur toile, 130 x 195 cm</p>
+                       </div>
+                       <div class="text-left md:text-right">
+                           <span class="text-[10px] uppercase tracking-[0.2em] text-gray-400 block">Galerie Leadouze</span>
+                           <span class="text-xs font-medium text-gallery-900">Disponible à l'acquisition</span>
+                       </div>
+                   </div>
+               </div>
+           </div>
+
+
+       </div>
+   </section>
+
+
+   <!-- Information / Concept Section -->
+   <section id="exposition" class="py-24 border-t border-gray-100 bg-gallery-50">
+       <div class="max-w-6xl mx-auto px-8">
+           <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+               <div class="lg:col-span-7">
+                   <span class="text-[10px] uppercase tracking-[0.3em] font-semibold text-accent-gold block mb-3">
+                       Rétrospective & Rencontres
+                   </span>
+                   <h2 class="text-3xl md:text-4xl font-serif-title text-gallery-900 mb-8 leading-snug">
+                       Une immersion artistique & un cadre d'échange privilégié
+                   </h2>
+                   <p class="text-sm text-gray-600 mb-6 font-light leading-relaxed">
+                       À l'occasion de l'exposition consacrée au peintre <strong>Pontecorvo</strong>, reconnu pour ses silhouettes iconiques et son travail sur la lumière urbaine, la Galerie Leadouze et InRealArt ouvrent un espace de dialogue dédié au marché de l'art.
+                   </p>
+                   <p class="text-sm text-gray-600 mb-10 font-light leading-relaxed">
+                       Pensé pour répondre aux enjeux des professionnels de la gestion de patrimoine (CGP, avocats, notaires, family offices), cet événement conjugue visite culturelle et décryptage des opportunités de diversification d'actifs.
+                   </p>
+
+
+                   <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 border-t border-gray-200/80 pt-8">
+                       <div>
+                           <span class="text-xs uppercase tracking-[0.2em] font-semibold text-gallery-900 block mb-2">
+                               En Journée • En accès libre
+                           </span>
+                           <p class="text-xs text-gray-500 font-light leading-relaxed">
+                               Ouvert à l'ensemble des passionnés d'art et collectionneurs souhaitant admirer les toiles exposées.
+                           </p>
+                       </div>
+                       <div>
+                           <span class="text-xs uppercase tracking-[0.2em] font-semibold text-gallery-900 block mb-2">
+                               Soirées (19h–22h) • Sur invitation
+                           </span>
+                           <p class="text-xs text-gray-500 font-light leading-relaxed">
+                               Soirées privatisées avec cocktail networking, tables rondes et cas d'études patrimoniales.
+                           </p>
+                       </div>
+                   </div>
+               </div>
+
+
+               <div class="lg:col-span-5">
+                   <div class="bg-white p-8 luxury-border shadow-sm space-y-6">
+                       <h3 class="text-xs uppercase tracking-[0.25em] font-semibold text-gallery-900 pb-4 border-b border-gray-100">
+                           Atouts Patrimoniaux
+                       </h3>
+                       <div class="space-y-4 text-xs font-light text-gray-600">
+                           <div class="flex items-start gap-3">
+                               <span class="text-accent-gold font-serif-title text-base">—</span>
+                               <div>
+                                   <strong class="font-medium text-gallery-900">Exonération IFI</strong>
+                                   <p class="text-gray-500 mt-0.5">Les œuvres d'art demeurent exclues de l'assiette de l'Impôt sur la Fortune Immobilière.</p>
+                               </div>
+                           </div>
+                           <div class="flex items-start gap-3">
+                               <span class="text-accent-gold font-serif-title text-base">—</span>
+                               <div>
+                                   <strong class="font-medium text-gallery-900">Fiscalité Entreprise (Art. 238bis AB)</strong>
+                                   <p class="text-gray-500 mt-0.5">Déduction intégrale du prix d'acquisition du résultat imposable sur 5 ans.</p>
+                               </div>
+                           </div>
+                           <div class="flex items-start gap-3">
+                               <span class="text-accent-gold font-serif-title text-base">—</span>
+                               <div>
+                                   <strong class="font-medium text-gallery-900">Protection & Transmission</strong>
+                                   <p class="text-gray-500 mt-0.5">Un actif tangible, déconnecté des marchés financiers traditionnels.</p>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </section>
+
+
+   <!-- Intervenants Section -->
+   <section id="intervenants" class="py-24 border-t border-gray-100 bg-white">
+       <div class="max-w-6xl mx-auto px-8">
+           <div class="text-center max-w-2xl mx-auto mb-20">
+               <span class="text-[10px] uppercase tracking-[0.3em] font-semibold text-accent-gold block mb-3">
+                   Expertises Croisées
+               </span>
+               <h2 class="text-3xl md:text-4xl font-serif-title text-gallery-900">
+                   Les Intervenants
+               </h2>
+           </div>
+
+
+           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+               <!-- Card 1 -->
+               <div class="luxury-card p-8 text-center flex flex-col justify-between">
+                   <div>
+                       <div class="w-16 h-16 mx-auto mb-6 rounded-full bg-gallery-50 border border-gray-200 flex items-center justify-center font-serif-title text-lg text-gallery-900">
+                           AL
+                       </div>
+                       <h3 class="text-base font-semibold text-gallery-900 mb-1">Alexandre Leadouze</h3>
+                       <p class="text-[11px] text-accent-gold uppercase tracking-wider mb-4">Propriétaire • Galerie Leadouze</p>
+                       <p class="text-xs text-gray-500 font-light leading-relaxed">
+                           Figures de référence du marché de l'art parisien, il présente l'exposition Pontecorvo et la cote des artistes.
+                       </p>
+                   </div>
+               </div>
+
+
+               <!-- Card 2 -->
+               <div class="luxury-card p-8 text-center flex flex-col justify-between">
+                   <div>
+                       <div class="w-16 h-16 mx-auto mb-6 rounded-full bg-gallery-50 border border-gray-200 flex items-center justify-center font-serif-title text-lg text-gallery-900">
+                           TH
+                       </div>
+                       <h3 class="text-base font-semibold text-gallery-900 mb-1">Thibault</h3>
+                       <p class="text-[11px] text-accent-gold uppercase tracking-wider mb-4">Directeur • Galerie Leadouze</p>
+                       <p class="text-xs text-gray-500 font-light leading-relaxed">
+                           Spécialiste de la médiation artistique, il anime la découverte guidée des toiles majeures présentées.
+                       </p>
+                   </div>
+               </div>
+
+
+               <!-- Card 3 -->
+               <div class="luxury-card p-8 text-center flex flex-col justify-between">
+                   <div>
+                       <div class="w-16 h-16 mx-auto mb-6 rounded-full bg-gallery-50 border border-gray-200 flex items-center justify-center font-serif-title text-lg text-gallery-900">
+                           NK
+                       </div>
+                       <h3 class="text-base font-semibold text-gallery-900 mb-1">Nicolas Kaenzig</h3>
+                       <p class="text-[11px] text-accent-gold uppercase tracking-wider mb-4">Ex-Christie's • Expert Art</p>
+                       <p class="text-xs text-gray-500 font-light leading-relaxed">
+                           Ancien spécialiste Christie's et conseiller auprès des Family Offices et CGP pour l'intégration de l'art au patrimoine.
+                       </p>
+                   </div>
+               </div>
+
+
+               <!-- Card 4 -->
+               <div class="luxury-card p-8 text-center flex flex-col justify-between">
+                   <div>
+                       <div class="w-16 h-16 mx-auto mb-6 rounded-full bg-gallery-50 border border-gray-200 flex items-center justify-center font-serif-title text-lg text-gallery-900">
+                           TR
+                       </div>
+                       <h3 class="text-base font-semibold text-gallery-900 mb-1">Timothée Roy</h3>
+                       <p class="text-[11px] text-accent-gold uppercase tracking-wider mb-4">Fondateur • InRealArt</p>
+                       <p class="text-xs text-gray-500 font-light leading-relaxed">
+                           Pionnier de la numérisation et sécurisation des actifs artistiques, il dévoile les solutions d'investissement moderne.
+                       </p>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </section>
+
+
+   <!-- Programme Section -->
+   <section id="programme" class="py-24 border-t border-gray-100 bg-gallery-50">
+       <div class="max-w-4xl mx-auto px-8">
+           <div class="text-center mb-16">
+               <span class="text-[10px] uppercase tracking-[0.3em] font-semibold text-accent-gold block mb-3">
+                   Format Nocturne
+               </span>
+               <h2 class="text-3xl md:text-4xl font-serif-title text-gallery-900">
+                   Déroulé des Soirées (19h00 – 22h00)
+               </h2>
+           </div>
+
+
+           <div class="space-y-6">
+               <div class="bg-white p-8 luxury-border flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
+                   <span class="text-xs uppercase tracking-[0.25em] font-semibold text-accent-gold shrink-0">19h00 – 19h30</span>
+                   <div class="md:text-right">
+                       <h3 class="text-base font-serif-title font-medium text-gallery-900">Cocktail d'Accueil & Vernissage Privé</h3>
+                       <p class="text-xs text-gray-500 font-light mt-1">Découverte exclusive de l'exposition Pontecorvo en présence des galeristes.</p>
+                   </div>
+               </div>
+
+
+               <div class="bg-white p-8 luxury-border flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
+                   <span class="text-xs uppercase tracking-[0.25em] font-semibold text-accent-gold shrink-0">19h30 – 20h30</span>
+                   <div class="md:text-right">
+                       <h3 class="text-base font-serif-title font-medium text-gallery-900">Table Ronde & Structuration Patrimoniale</h3>
+                       <p class="text-xs text-gray-500 font-light mt-1">Intervention de Nicolas Kaenzig et Timothée Roy sur l'art comme levier financier.</p>
+                   </div>
+               </div>
+
+
+               <div class="bg-white p-8 luxury-border flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
+                   <span class="text-xs uppercase tracking-[0.25em] font-semibold text-accent-gold shrink-0">20h30 – 21h00</span>
+                   <div class="md:text-right">
+                       <h3 class="text-base font-serif-title font-medium text-gallery-900">Démonstration du Simulateur Fiscal</h3>
+                       <p class="text-xs text-gray-500 font-light mt-1">Cas d'application concrète pour l'optimisation fiscale en entreprise et particuliers.</p>
+                   </div>
+               </div>
+
+
+               <div class="bg-white p-8 luxury-border flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
+                   <span class="text-xs uppercase tracking-[0.25em] font-semibold text-accent-gold shrink-0">21h00 – 22h00</span>
+                   <div class="md:text-right">
+                       <h3 class="text-base font-serif-title font-medium text-gallery-900">Networking Privé & Échanges Privilégiés</h3>
+                       <p class="text-xs text-gray-500 font-light mt-1">Échanges confidentiels entre confrères et réservations d'œuvres.</p>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </section>
+
+
+   <!-- Simulateur Banner -->
+   <section id="defiscalisation" class="py-20 bg-gallery-900 text-white relative">
+       <div class="max-w-5xl mx-auto px-8 flex flex-col md:flex-row justify-between items-center gap-8">
+           <div class="space-y-3">
+               <span class="text-[10px] uppercase tracking-[0.3em] font-medium text-accent-gold">Outil InRealArt</span>
+               <h3 class="text-2xl md:text-3xl font-serif-title font-light">Simulez l’impact fiscal d’un investissement artistique</h3>
+               <p class="text-xs text-gray-400 font-light max-w-xl leading-relaxed">
+                   Accédez en quelques clics à notre calculateur d'amortissement fiscal pour vos clients ou vos entreprises.
+               </p>
+           </div>
+           <a href="https://www.inrealart.com/" target="_blank" rel="noopener noreferrer" class="btn-perrotin bg-white text-gallery-900 hover:bg-accent-gold hover:text-white px-8 py-4 text-xs font-medium uppercase tracking-[0.2em] shrink-0">
+               Ouvrir le Simulateur
+           </a>
+       </div>
+   </section>
+
+
+   <!-- Reservation Form Section -->
+   <section id="reservation" class="py-24 border-t border-gray-100 bg-white">
+       <div class="max-w-3xl mx-auto px-8">
+           <div class="bg-gallery-50 p-10 md:p-14 luxury-border">
+               <div class="text-center mb-12">
+                   <span class="text-[10px] uppercase tracking-[0.3em] font-semibold text-accent-gold block mb-2">Soirées Réservées</span>
+                   <h2 class="text-3xl font-serif-title text-gallery-900">Demande d'Invitation Nommée</h2>
+                   <p class="text-xs text-gray-500 font-light mt-3">Veuillez indiquer la soirée de votre choix (15, 16 ou 17 Octobre).</p>
+               </div>
+
+
+               <form id="event-form" class="space-y-6" onsubmit="handleFormSubmit(event)">
+                   <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                       <div>
+                           <label class="block text-[10px] uppercase tracking-[0.2em] text-gray-500 mb-2 font-medium">Prénom</label>
+                           <input type="text" required class="w-full bg-white border border-gray-200 rounded-none px-4 py-3 text-xs text-gallery-900 focus:outline-none focus:border-gallery-900">
+                       </div>
+                       <div>
+                           <label class="block text-[10px] uppercase tracking-[0.2em] text-gray-500 mb-2 font-medium">Nom</label>
+                           <input type="text" required class="w-full bg-white border border-gray-200 rounded-none px-4 py-3 text-xs text-gallery-900 focus:outline-none focus:border-gallery-900">
+                       </div>
+                   </div>
+
+
+                   <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                       <div>
+                           <label class="block text-[10px] uppercase tracking-[0.2em] text-gray-500 mb-2 font-medium">Email Professionnel</label>
+                           <input type="email" required class="w-full bg-white border border-gray-200 rounded-none px-4 py-3 text-xs text-gallery-900 focus:outline-none focus:border-gallery-900">
+                       </div>
+                       <div>
+                           <label class="block text-[10px] uppercase tracking-[0.2em] text-gray-500 mb-2 font-medium">Téléphone</label>
+                           <input type="tel" required class="w-full bg-white border border-gray-200 rounded-none px-4 py-3 text-xs text-gallery-900 focus:outline-none focus:border-gallery-900">
+                       </div>
+                   </div>
+
+
+                   <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                       <div>
+                           <label class="block text-[10px] uppercase tracking-[0.2em] text-gray-500 mb-2 font-medium">Activité / Profession</label>
+                           <select required class="w-full bg-white border border-gray-200 rounded-none px-4 py-3 text-xs text-gallery-900 focus:outline-none focus:border-gallery-900">
+                               <option value="" disabled selected>Sélectionner</option>
+                               <option value="cgp">CGP / Conseiller Patrimonial</option>
+                               <option value="avocat">Avocat / Juriste</option>
+                               <option value="fo">Family Office</option>
+                               <option value="notaire">Notaire</option>
+                               <option value="collectionneur">Collectionneur / Investisseur</option>
+                           </select>
+                       </div>
+                       <div>
+                           <label class="block text-[10px] uppercase tracking-[0.2em] text-gray-500 mb-2 font-medium">Soirée Souhaitée</label>
+                           <select required class="w-full bg-white border border-gray-200 rounded-none px-4 py-3 text-xs text-gallery-900 focus:outline-none focus:border-gallery-900">
+                               <option value="15">Mardi 15 Octobre (19h – 22h)</option>
+                               <option value="16">Mercredi 16 Octobre (19h – 22h)</option>
+                               <option value="17">Jeudi 17 Octobre (19h – 22h)</option>
+                           </select>
+                       </div>
+                   </div>
+
+
+                   <button type="submit" class="w-full btn-perrotin py-4 text-xs font-medium uppercase tracking-[0.25em]">
+                       Soumettre ma Demande
+                   </button>
+               </form>
+
+
+               <div id="form-feedback" class="hidden mt-6 p-4 bg-white border border-gray-200 text-xs text-gallery-900 text-center font-light">
+                   Votre demande d'invitation a bien été transmise. Nos équipes reviendront vers vous sous 24h.
+               </div>
+           </div>
+       </div>
+   </section>
+
+
+   <!-- FAQ Section -->
+   <section id="faq" class="py-24 border-t border-gray-100 bg-gallery-50">
+       <div class="max-w-4xl mx-auto px-8">
+           <div class="text-center mb-16">
+               <span class="text-[10px] uppercase tracking-[0.3em] font-semibold text-accent-gold block mb-3">Informations</span>
+               <h2 class="text-3xl md:text-4xl font-serif-title text-gallery-900">Questions Fréquentes</h2>
+           </div>
+
+
+           <div class="space-y-4">
+               <div class="bg-white luxury-border p-6">
+                   <button class="w-full text-left font-medium text-sm text-gallery-900 flex justify-between items-center" onclick="toggleFaq(this)">
+                       <span>À qui s'adresse l'événement ?</span>
+                       <i data-lucide="chevron-down" class="w-4 h-4 text-gray-400"></i>
+                   </button>
+                   <div class="hidden pt-4 text-xs text-gray-500 font-light leading-relaxed border-t border-gray-100 mt-4">
+                       L'exposition Pontecorvo en journée est ouverte à tout public souhaitant admirer les toiles. Les soirées de 19h à 22h sont quant à elles réservées sur invitation aux professionnels du patrimoine, avocats, family offices et investisseurs.
+                   </div>
+               </div>
+
+
+               <div class="bg-white luxury-border p-6">
+                   <button class="w-full text-left font-medium text-sm text-gallery-900 flex justify-between items-center" onclick="toggleFaq(this)">
+                       <span>Comment fonctionne la défiscalisation d'une œuvre d'art ?</span>
+                       <i data-lucide="chevron-down" class="w-4 h-4 text-gray-400"></i>
+                   </button>
+                   <div class="hidden pt-4 text-xs text-gray-500 font-light leading-relaxed border-t border-gray-100 mt-4">
+                       En vertu de l'article 238bis AB du CGI, l'acquisition d'une œuvre d'artiste vivant permet d'amortir 100% du prix d'achat sur le résultat imposable de l'entreprise sur 5 ans. De plus, les œuvres d'art sont exclues de l'IFI pour les particuliers.
+                   </div>
+               </div>
+
+
+               <div class="bg-white luxury-border p-6">
+                   <button class="w-full text-left font-medium text-sm text-gallery-900 flex justify-between items-center" onclick="toggleFaq(this)">
+                       <span>Puis-je venir accompagné ?</span>
+                       <i data-lucide="chevron-down" class="w-4 h-4 text-gray-400"></i>
+                   </button>
+                   <div class="hidden pt-4 text-xs text-gray-500 font-light leading-relaxed border-t border-gray-100 mt-4">
+                       Oui, sous réserve d'avoir enregistré le nom de votre accompagnateur ou client dans le formulaire de réservation afin de respecter la jauge d'accueil.
+                   </div>
+               </div>
+           </div>
+       </div>
+   </section>
+
+
+   <!-- Footer -->
+   <footer class="py-12 border-t border-gray-100 text-center text-[11px] text-gray-400 uppercase tracking-widest bg-white">
+       <div class="max-w-7xl mx-auto px-8 flex flex-col md:flex-row justify-between items-center gap-4">
+           <div>© 2026 InRealArt x Galerie Leadouze</div>
+           <div class="flex space-x-6">
+               <a href="#defiscalisation" class="hover:text-gallery-900 transition-colors">Simulateur</a>
+               <a href="#" class="hover:text-gallery-900 transition-colors">Mentions Légales</a>
+           </div>
+       </div>
+   </footer>
+
+
+   <!-- Scripts -->
+   <script>
+       lucide.createIcons();
+
+
+       function toggleFaq(button) {
+           const content = button.nextElementSibling;
+           const icon = button.querySelector('i');
+          
+           if (content.classList.contains('hidden')) {
+               content.classList.remove('hidden');
+               icon.style.transform = 'rotate(180deg)';
+           } else {
+               content.classList.add('hidden');
+               icon.style.transform = 'rotate(0deg)';
+           }
+       }
+
+
+       function handleFormSubmit(event) {
+           event.preventDefault();
+           document.getElementById('form-feedback').classList.remove('hidden');
+           event.target.reset();
+       }
+   </script>
+</body>
+</html>
