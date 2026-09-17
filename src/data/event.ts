@@ -61,9 +61,9 @@ export const speakers: Speaker[] = [
   },
   {
     name: "Timothée Roy",
-    role: "Fondateur • InRealArt",
-    bio: "Pionnier de la numérisation et sécurisation des actifs artistiques, il dévoile les solutions d'investissement moderne.",
-    photo: "/images/intervenants/Tim.webp",
+    role: "Fondateur d'InRealArt et agent d'artiste",
+    bio: "Timothée crée des synergies stratégiques entre les talents et les acteurs du marché de l'art.",
+    photo: "/images/intervenants/Timothee.webp",
   },
 ]
 
