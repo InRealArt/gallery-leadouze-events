@@ -17,7 +17,7 @@ export default function Home() {
         <ExpositionSection />
         <IntervenantsSection />
         <ProgrammeSection />
-        <DefiscalisationBanner />
+        {/* <DefiscalisationBanner /> */}
         <ReservationSection />
         <FaqSection />
       </main>
