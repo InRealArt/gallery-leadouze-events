@@ -7,7 +7,7 @@ export function ArtworkCartel() {
         <div className="relative w-full aspect-16/10 overflow-hidden bg-gray-200">
           <Image
             src="/images/artworks/featured/pontecorvo_artwork.webp"
-            alt="Pontecorvo, Passants et Perspectives, 2023, huile sur toile"
+            alt="Pontecorvo, Burning Man, huile sur toile"
             fill
             priority
             sizes="(min-width: 1024px) 900px, 100vw"
@@ -20,9 +20,9 @@ export function ArtworkCartel() {
             <p className="text-[10px] uppercase tracking-[0.25em] text-accent-gold font-semibold mb-1">
               Œuvre Vedette
             </p>
-            <h3 className="text-xl font-serif-title font-medium text-gallery-900">PONTECORVO</h3>
+            <h3 className="text-xl font-serif-title font-medium text-gallery-900">Burning Man</h3>
             <p className="text-xs text-gray-500 italic mt-0.5">
-              Passants &amp; Perspectives, 2023 — Huile sur toile, 130 x 195 cm
+              Huile sur toile, 130 x 195 cm
             </p>
           </div>
           <div className="text-left md:text-right">
