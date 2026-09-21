@@ -10,29 +10,15 @@ export function ExpositionSection() {
               Rétrospective &amp; Rencontres
             </span>
             <h2 className="text-3xl md:text-4xl font-serif-title text-gallery-900 mb-8 leading-snug">
-              Une immersion artistique &amp; un cadre d&apos;échange privilégié
+              Une traversée au cœur de la création et du marché
             </h2>
             <p className="text-sm text-gray-600 mb-6 font-light leading-relaxed">
-              À l&apos;occasion de l&apos;exposition consacrée au peintre <strong>Pontecorvo</strong>, reconnu pour
-              ses silhouettes iconiques et son travail sur la lumière urbaine, la Galerie Leadouze et InRealArt
-              ouvrent un espace de dialogue dédié au marché de l&apos;art.
+              Au fil de la soirée, laissez-vous guider à travers trois perspectives complémentaires :
+              l&apos;immersion dans l&apos;œuvre d&apos;un peintre majeur, le décryptage des profils de
+              collectionneurs sous le regard éclairé d&apos;un spécialiste issu de Christie&rsquo;s, et la découverte
+              d&apos;InRealArt ou l&apos;art pensé comme levier de structuration patrimoniale.
             </p>
-            <p className="text-sm text-gray-600 mb-10 font-light leading-relaxed">
-              Pensé pour répondre aux enjeux des professionnels de la gestion de patrimoine (CGP, avocats, notaires,
-              family offices), cet événement conjugue visite culturelle et décryptage des opportunités de
-              diversification d&apos;actifs.
-            </p>
-
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 border-t border-gray-200/80 pt-8">
-              <div>
-                <span className="text-xs uppercase tracking-[0.2em] font-semibold text-gallery-900 block mb-2">
-                  En Journée • En accès libre
-                </span>
-                <p className="text-xs text-gray-500 font-light leading-relaxed">
-                  Ouvert à l&apos;ensemble des passionnés d&apos;art et collectionneurs souhaitant admirer les toiles
-                  exposées.
-                </p>
-              </div>
+            <div className="grid grid-cols-1 gap-8 border-t border-gray-200/80 pt-8">
               <div>
                 <span className="text-xs uppercase tracking-[0.2em] font-semibold text-gallery-900 block mb-2">
                   Soirées (19h–22h) • Sur invitation
