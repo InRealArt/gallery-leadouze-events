@@ -75,24 +75,24 @@ export interface ProgrammeItem {
 
 export const programme: ProgrammeItem[] = [
   {
+    time: "18h00 – 19h00",
+    title: "Accueil des participants",
+    description: "Alexandre Leadouze vous accueille pour cet événement exceptionnel.",
+  },
+  {
     time: "19h00 – 19h30",
-    title: "Cocktail d'Accueil & Vernissage Privé",
-    description: "Découverte exclusive de l'exposition Pontecorvo en présence des galeristes.",
+    title: "La typologie des collectionneurs : lequel êtes-vous ?",
+    description: "Intervention de Nicolas Kaenzig sur les profils et motivations des collectionneurs d'art.",
   },
   {
-    time: "19h30 – 20h30",
-    title: "Table Ronde & Structuration Patrimoniale",
-    description: "Intervention de Nicolas Kaenzig et Timothée Roy sur l'art comme levier financier.",
+    time: "19h30 – 20h00",
+    title: "Présentation d'inrealart & structuration patrimoniale",
+    description: "Intervention de Timothée Roy sur le projet inrealart et l'utilisation de l'art comme levier financier.",
   },
   {
-    time: "20h30 – 21h00",
-    title: "Démonstration du Simulateur Fiscal",
-    description: "Cas d'application concrète pour l'optimisation fiscale en entreprise et particuliers.",
-  },
-  {
-    time: "21h00 – 22h00",
-    title: "Networking Privé & Échanges Privilégiés",
-    description: "Échanges confidentiels entre confrères et réservations d'œuvres.",
+    time: "20h00 – 22h00",
+    title: "Cocktail & networking privé",
+    description: "Échanges autour des œuvres présentées d'Alain Pontecorvo.",
   },
 ]
 

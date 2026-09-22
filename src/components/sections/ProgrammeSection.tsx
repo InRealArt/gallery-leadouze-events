@@ -5,7 +5,7 @@ export function ProgrammeSection() {
   return (
     <section id="programme" className="py-24 border-t border-gray-100 bg-gallery-50">
       <div className="max-w-4xl mx-auto px-8">
-        <SectionHeading eyebrow="Format Nocturne" title="Déroulé des Soirées (19h00 – 22h00)" />
+        <SectionHeading eyebrow="Format Nocturne" title="Déroulé des Soirées (18h00 – 22h00)" />
 
         <div className="space-y-6">
           {programme.map((item) => (
