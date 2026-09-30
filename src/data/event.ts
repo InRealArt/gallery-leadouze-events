@@ -40,7 +40,7 @@ export const speakers: Speaker[] = [
   {
     name: "Timothée Roy",
     role: "Fondateur d'InRealArt et agent d'artiste",
-    bio: "Spécialiste de la communication culturelle, dédié à la mise en lumière et à la portée des œuvres comme des artistes.",
+    bio: "Spécialiste de la communication culturelle, au service de la visibilité et du rayonnement des artistes et de leurs œuvres.",
     photo: "/images/intervenants/Timothee.webp",
   },
 ]

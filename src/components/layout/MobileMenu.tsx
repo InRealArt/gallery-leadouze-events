@@ -38,7 +38,7 @@ export function MobileMenu({ links }: MobileMenuProps) {
             </Link>
           ))}
           <LinkButton href="#reservation" className="px-6 py-2.5 shadow-sm" onClick={() => setOpen(false)}>
-            Accès Privé
+            Je m&apos;inscris
           </LinkButton>
         </nav>
       )}

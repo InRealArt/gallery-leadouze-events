@@ -24,7 +24,7 @@ export function Header() {
 
         <div className="flex items-center gap-6">
           <LinkButton href="#reservation" className="hidden lg:inline-block px-6 py-2.5 shadow-sm">
-            Accès Privé
+            Je m&apos;inscris
           </LinkButton>
           <MobileMenu links={navLinks} />
         </div>
