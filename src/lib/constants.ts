@@ -10,3 +10,6 @@ export const SITE = {
   },
   simulatorUrl: "https://www.inrealart.com//heritage-art-simulator",
 } as const
+
+/** Turnstile `action` for the invitation form (max 32 chars, verified server-side). */
+export const TURNSTILE_ACTION_RESERVATION = "reservation"
