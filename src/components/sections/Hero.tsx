@@ -13,7 +13,7 @@ export function Hero() {
         </h1>
 
         <p className="text-sm md:text-base text-gray-500 max-w-2xl mx-auto mb-12 font-light leading-relaxed tracking-wide">
-          Alain Pontecorvo, collectionnisme et patrimoine : un événement pensé pour vous et animé par nos experts.
+          Une soirée exclusive mêlant exposition, masterclass sur le marché de l&apos;art et cocktail networking
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-20">

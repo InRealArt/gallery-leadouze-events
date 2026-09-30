@@ -40,10 +40,32 @@ export const speakers: Speaker[] = [
   {
     name: "Timothée Roy",
     role: "Fondateur d'InRealArt et agent d'artiste",
-    bio: "Spécialiste de la communication culturelle, dédié à la visibilité et au rayonnement des œuvres et des artistes.",
+    bio: "Spécialiste de la communication culturelle, dédié à la mise en lumière et à la portée des œuvres comme des artistes.",
     photo: "/images/intervenants/Timothee.webp",
   },
 ]
+
+export interface GuestOfHonour {
+  name: string
+  role: string
+  bio: string
+  highlights: string[]
+  photo: string
+  profileUrl: string
+}
+
+export const guestOfHonour: GuestOfHonour = {
+  name: "Xavier Près",
+  role: "Avocat associé • VALTHER",
+  bio: "Docteur en droit et spécialiste de la propriété intellectuelle, Xavier Près conseille depuis plus de 20 ans une clientèle publique et privée, avec un fil conducteur : l'art et la culture. Il dispose d'une solide expertise en droit du marché de l'art et du patrimoine culturel.",
+  highlights: [
+    "Ancien responsable du service juridique du musée du Louvre",
+    "Droit du marché de l'art & patrimoine culturel",
+    "Enseignant à Sciences Po et à l'Université Paris-Panthéon-Assas",
+  ],
+  photo: "/images/intervenants/Xavier.webp",
+  profileUrl: "https://www.valther.com/team/xavier-pres",
+}
 
 export interface ProgrammeItem {
   time: string
@@ -87,17 +109,6 @@ export const professionOptions: ProfessionOption[] = [
   { value: "collectionneur", label: "Collectionneur / Investisseur" },
 ]
 
-export interface EveningOption {
-  value: string
-  label: string
-}
-
-export const eveningOptions: EveningOption[] = [
-  { value: "15", label: "Mardi 15 Octobre (18h – 22h)" },
-  { value: "16", label: "Mercredi 16 Octobre (18h – 22h)" },
-  { value: "17", label: "Jeudi 17 Octobre (18h – 22h)" },
-]
-
 export interface FaqItem {
   question: string
   answer: string
@@ -123,11 +134,6 @@ export const faqItems: FaqItem[] = [
     question: "Quel est le programme de la masterclass de Nicolas Kaenzig ?",
     answer:
       "Fort de 20 ans d'expérience chez Christie's, l'expert Nicolas Kaenzig animera la masterclass « Quel collectionneur êtes-vous ? ». Il y décryptera les différentes typologies de collectionneurs et les tendances clés du marché de l'art contemporain.",
-  },
-  {
-    question: "Que présente InRealArt lors de cette soirée ?",
-    answer:
-      "Timothée Roy, fondateur d'InRealArt, présentera le projet et vous dévoilera le catalogue d'artistes.",
   },
   {
     question: "Quels documents seront mis à disposition des visiteurs ?",

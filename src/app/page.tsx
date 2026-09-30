@@ -3,6 +3,7 @@ import { Footer } from "@/components/layout/Footer"
 import { Hero } from "@/components/sections/Hero"
 import { ExpositionSection } from "@/components/sections/ExpositionSection"
 import { IntervenantsSection } from "@/components/sections/IntervenantsSection"
+import { InviteHonneurSection } from "@/components/sections/InviteHonneurSection"
 import { ProgrammeSection } from "@/components/sections/ProgrammeSection"
 import { DefiscalisationBanner } from "@/components/sections/DefiscalisationBanner"
 import { ReservationSection } from "@/components/sections/ReservationSection"
@@ -16,6 +17,7 @@ export default function Home() {
         <Hero />
         <ExpositionSection />
         <IntervenantsSection />
+        <InviteHonneurSection />
         <ProgrammeSection />
         {/* <DefiscalisationBanner /> */}
         <ReservationSection />

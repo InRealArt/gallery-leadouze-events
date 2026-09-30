@@ -16,11 +16,12 @@ export function ExpositionSection() {
               Une traversée au cœur de la création et du marché
             </h2>
             <p className="text-sm text-gray-600 mb-6 font-light leading-relaxed">
-              Au fil de la soirée, laissez-vous guider par Alexandre Leadouze, propriétaire de cette galerie
-              iconique du 16 avenue Matignon, et Thibault Proust, directeur de la galerie et chef de projet
-              culturel. Nicolas Kaenzig, fort de ses 20 ans d&apos;expérience chez Christie&rsquo;s, animera une
-              masterclass sur le marché de l&apos;art : «&nbsp;Quel collectionneur êtes-vous&nbsp;?&nbsp;». Enfin,
-              Timothée Roy présentera l&apos;agence de communication InRealArt ainsi que son catalogue d&apos;artistes.
+              Tout au long de la soirée, laissez-vous guider par Alexandre Leadouze, propriétaire de cette
+              galerie emblématique du 16, avenue Matignon, et par Thibault Proust, son directeur et chef de projet
+              culturel. Fort de vingt ans d&apos;expérience chez Christie&rsquo;s, Nicolas Kaenzig animera ensuite
+              une masterclass consacrée au marché de l&apos;art : «&nbsp;Quel collectionneur êtes-vous&nbsp;?&nbsp;».
+              Enfin, Timothée Roy vous présentera InRealArt, agence de communication dédiée aux artistes, ainsi que
+              son catalogue.
             </p>
             <div className="grid grid-cols-1 gap-8 border-t border-gray-200/80 pt-8">
               <div>

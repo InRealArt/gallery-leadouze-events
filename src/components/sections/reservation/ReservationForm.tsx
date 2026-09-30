@@ -1,7 +1,7 @@
 "use client"
 
 import { useState, type FormEvent } from "react"
-import { eveningOptions, professionOptions } from "@/data/event"
+import { professionOptions } from "@/data/event"
 import { SubmitButton } from "@/components/ui/Button"
 import { FormField, FormSelect } from "./FormField"
 
@@ -27,25 +27,15 @@ export function ReservationForm() {
           <FormField id="phone" name="phone" label="Téléphone" type="tel" required />
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <FormSelect
-            id="profession"
-            name="profession"
-            label="Activité / Profession"
-            options={professionOptions}
-            placeholder="Sélectionner"
-            defaultValue=""
-            required
-          />
-          <FormSelect
-            id="evening"
-            name="evening"
-            label="Soirée Souhaitée"
-            options={eveningOptions}
-            defaultValue={eveningOptions[0]?.value}
-            required
-          />
-        </div>
+        <FormSelect
+          id="profession"
+          name="profession"
+          label="Activité / Profession"
+          options={professionOptions}
+          placeholder="Sélectionner"
+          defaultValue=""
+          required
+        />
 
         <SubmitButton type="submit">Soumettre ma Demande</SubmitButton>
       </form>

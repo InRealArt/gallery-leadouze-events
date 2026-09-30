@@ -2,8 +2,8 @@ export const SITE = {
   name: "InRealArt x Galerie Leadouze",
   title: "Pontecorvo à la Galerie Leadouze : Masterclass, Art & Collectionnisme",
   description:
-    "Exposition rétrospective Pontecorvo à Paris, prolongée par trois soirées exclusives sur invitation pour CGP, avocats et family offices.",
-  dates: "Paris • 15, 16 & 17 Octobre",
+    "Exposition rétrospective Pontecorvo à Paris, prolongée par une soirée exclusive sur invitation le jeudi 5 novembre pour CGP, avocats et family offices.",
+  dates: "Paris • Jeudi 5 Novembre",
   gallery: {
     name: "Galerie Leadouze",
     address: "16 avenue Matignon, 75008 Paris",
