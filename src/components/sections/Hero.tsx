@@ -9,7 +9,7 @@ export function Hero() {
         <p className="text-xs font-semibold uppercase tracking-[0.3em] text-accent-gold mb-6">{SITE.dates}</p>
 
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-serif-title font-normal tracking-tight leading-[1.1] text-gallery-900 mb-8">
-          La Galerie Leadouze &amp; InRealArt vous invitent
+          {SITE.title}
         </h1>
 
         <p className="text-sm md:text-base text-gray-500 max-w-2xl mx-auto mb-12 font-light leading-relaxed tracking-wide">
@@ -18,7 +18,7 @@ export function Hero() {
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-20">
           <LinkButton href="#reservation" variant="solid" className="w-full sm:w-auto shadow-sm">
-            Demander une invitation
+            Recevoir une invitation
           </LinkButton>
         </div>
 
