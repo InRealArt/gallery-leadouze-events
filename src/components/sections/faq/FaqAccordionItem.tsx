@@ -3,6 +3,7 @@
 import { useState } from "react"
 import { ChevronDown } from "lucide-react"
 import type { FaqItem } from "@/data/event"
+import { LinkButton } from "@/components/ui/Button"
 
 export function FaqAccordionItem({ question, answer }: FaqItem) {
   const [open, setOpen] = useState(false)
@@ -22,7 +23,10 @@ export function FaqAccordionItem({ question, answer }: FaqItem) {
       </button>
       {open && (
         <div className="pt-4 text-xs text-gray-500 font-light leading-relaxed border-t border-gray-100 mt-4">
-          {answer}
+          <p>{answer}</p>
+          <LinkButton href="#reservation" variant="outline" className="inline-block mt-6 px-6 py-2.5">
+            Je m&apos;inscris
+          </LinkButton>
         </div>
       )}
     </div>

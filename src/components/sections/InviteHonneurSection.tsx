@@ -37,7 +37,7 @@ export function InviteHonneurSection() {
 
             <p className="text-sm text-gray-300 font-light leading-relaxed mb-8">{guestOfHonour.bio}</p>
 
-            <ul className="space-y-3 mb-10 text-left inline-block md:block">
+            <ul className="space-y-3 text-left inline-block md:block">
               {guestOfHonour.highlights.map((highlight) => (
                 <li key={highlight} className="flex items-start gap-3 text-xs text-gray-300 font-light">
                   <span className="text-accent-gold-light font-serif-title text-base leading-4">—</span>
@@ -45,17 +45,6 @@ export function InviteHonneurSection() {
                 </li>
               ))}
             </ul>
-
-            <div>
-              <a
-                href={guestOfHonour.profileUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block text-[11px] uppercase tracking-[0.25em] text-white border-b border-accent-gold pb-1 transition-colors hover:text-accent-gold-light"
-              >
-                Voir son profil
-              </a>
-            </div>
           </div>
         </div>
       </div>

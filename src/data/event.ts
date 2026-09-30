@@ -51,7 +51,6 @@ export interface GuestOfHonour {
   bio: string
   highlights: string[]
   photo: string
-  profileUrl: string
 }
 
 export const guestOfHonour: GuestOfHonour = {
@@ -64,7 +63,6 @@ export const guestOfHonour: GuestOfHonour = {
     "Enseignant à Sciences Po et à l'Université Paris-Panthéon-Assas",
   ],
   photo: "/images/intervenants/Xavier.webp",
-  profileUrl: "https://www.valther.com/team/xavier-pres",
 }
 
 export interface ProgrammeItem {
