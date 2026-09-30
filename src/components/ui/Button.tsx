@@ -35,6 +35,15 @@ export function LinkButton({
     )
   }
 
+  // Native anchor so the browser applies the global smooth scroll (next/link jumps instantly)
+  if (href.startsWith("#")) {
+    return (
+      <a href={href} className={classes} {...props}>
+        {children}
+      </a>
+    )
+  }
+
   return (
     <Link href={href} className={classes} {...props}>
       {children}
