@@ -1,5 +1,4 @@
 import * as z from "zod"
-import { professionOptions } from "@/data/event"
 
 const PHONE_PATTERN = /^\+?[\d\s.\-()]+$/
 const MIN_PHONE_DIGITS = 8
@@ -26,9 +25,7 @@ export const reservationSchema = z.object({
   }, "Le format du téléphone est invalide (ex. 06 12 34 56 78 ou +33 6 12 34 56 78)."),
   company: requiredText("L'entreprise est obligatoire."),
   city: requiredText("La ville est obligatoire."),
-  profession: z
-    .string({ error: "Merci de sélectionner votre activité." })
-    .refine((value) => professionOptions.some((option) => option.value === value), "Merci de sélectionner votre activité."),
+  profession: requiredText("L'activité ou la profession est obligatoire."),
 })
 
 export type ReservationInput = z.infer<typeof reservationSchema>

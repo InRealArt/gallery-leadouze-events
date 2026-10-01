@@ -2,6 +2,7 @@ import { Header } from "@/components/layout/Header"
 import { Footer } from "@/components/layout/Footer"
 import { Hero } from "@/components/sections/Hero"
 import { ExpositionSection } from "@/components/sections/ExpositionSection"
+import { GalleristQuoteSection } from "@/components/sections/GalleristQuoteSection"
 import { IntervenantsSection } from "@/components/sections/IntervenantsSection"
 import { InviteHonneurSection } from "@/components/sections/InviteHonneurSection"
 import { ProgrammeSection } from "@/components/sections/ProgrammeSection"
@@ -16,6 +17,7 @@ export default function Home() {
       <main>
         <Hero />
         <ExpositionSection />
+        <GalleristQuoteSection />
         <IntervenantsSection />
         <InviteHonneurSection />
         <ProgrammeSection />

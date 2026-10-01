@@ -20,47 +20,40 @@ export interface Speaker {
 
 export const speakers: Speaker[] = [
   {
-    name: "Alexandre Leadouze",
-    role: "Propriétaire • Galerie Leadouze",
-    bio: "Propriétaire de la galerie, fort de 40 ans d'ancrage et d'excellence Avenue Matignon.",
-    photo: "/images/intervenants/Alexandre.webp",
-  },
-  {
-    name: "Thibault Proust",
-    role: "Directeur • Galerie Leadouze",
-    bio: "Directeur de la galerie et chef de projet culturel, expert des trajectoires artistiques.",
-    photo: "/images/intervenants/Thibault.webp",
-  },
-  {
     name: "Nicolas Kaenzig",
-    role: "Ex-Christie's • Expert Art",
-    bio: "Expert du marché fort de 20 ans chez Christie's, animateur de la masterclass « Quel collectionneur êtes-vous ? ».",
+    role: "Expert en marché de l'art",
+    bio: "Vingt ans chez Christie's. Il conseille aujourd'hui des professions libérales et des family offices dans la construction de leur collection, et anime la masterclass « Quel collectionneur êtes-vous\u00a0? ».",
     photo: "/images/intervenants/Nicolas.webp",
   },
   {
     name: "Timothée Roy",
-    role: "Fondateur d'InRealArt et agent d'artiste",
-    bio: "Spécialiste de la communication culturelle, au service de la visibilité et du rayonnement des artistes et de leurs œuvres.",
+    role: "Fondateur d'InRealArt",
+    bio: "Agent d'artistes, il a fondé InRealArt, une agence de communication qui met en relation artistes, professionnels du marché et professions libérales.",
     photo: "/images/intervenants/Timothee.webp",
   },
 ]
 
+export const galleristQuote = {
+  name: "Alexandre Leadouze",
+  role: "Directeur de la galerie Leadouze",
+  photo: "/images/intervenants/Alexandre.webp",
+  quote:
+    "Depuis quarante ans, avenue Matignon, j'aide ceux qui aiment l'art à devenir collectionneurs. Le 5 novembre, Nicolas Kaenzig vous en livrera les clés, InRealArt vous dévoilera sa vision, et nous poursuivrons autour d'un cocktail, au cœur de la rétrospective Pontecorvo. Et si votre collection commençait ce soir-là\u00a0?",
+}
+
 export interface GuestOfHonour {
   name: string
   role: string
-  bio: string
-  highlights: string[]
+  bio: string[]
   photo: string
 }
 
 export const guestOfHonour: GuestOfHonour = {
   name: "Xavier Près",
-  role: "Avocat associé • VALTHER",
-  bio: "Docteur en droit et spécialiste de la propriété intellectuelle, Xavier Près conseille depuis plus de 20 ans une clientèle publique et privée, avec un fil conducteur : l'art et la culture. Il dispose d'une solide expertise en droit du marché de l'art et du patrimoine culturel.",
-  highlights: [
-    "Ancien responsable du service juridique du musée du Louvre",
-    "Droit du marché de l'art & patrimoine culturel",
-    "Enseignant à Sciences Po et à l'Université Paris-Panthéon-Assas",
+  role: "Avocat associé chez VALTHER",
+  bio: [
+    "Docteur en droit et spécialiste de la propriété intellectuelle, Xavier Près conseille depuis plus de vingt ans des clients publics et privés en droit du marché de l'art et du patrimoine culturel.",
+    "Ancien responsable du service juridique du musée du Louvre, il enseigne aujourd'hui à Sciences Po et à l'Université Paris-Panthéon-Assas.",
   ],
   photo: "/images/intervenants/Xavier.webp",
 }
@@ -85,26 +78,13 @@ export const programme: ProgrammeItem[] = [
   {
     time: "19h30 – 20h00",
     title: "Présentation d'InRealArt & du catalogue",
-    description: "Intervention de Timothée Roy : genèse du projet inrealart et présentation des œuvres du catalogue.",
+    description: "Intervention de Timothée Roy : genèse du projet InRealArt et présentation des œuvres du catalogue.",
   },
   {
     time: "20h00 – 22h00",
     title: "Cocktail & networking privé",
     description: "Échanges autour des œuvres présentées d'Alain Pontecorvo.",
   },
-]
-
-export interface ProfessionOption {
-  value: string
-  label: string
-}
-
-export const professionOptions: ProfessionOption[] = [
-  { value: "cgp", label: "CGP / Conseiller Patrimonial" },
-  { value: "avocat", label: "Avocat / Juriste" },
-  { value: "fo", label: "Family Office" },
-  { value: "notaire", label: "Notaire" },
-  { value: "collectionneur", label: "Collectionneur / Investisseur" },
 ]
 
 export interface FaqItem {

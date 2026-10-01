@@ -7,7 +7,7 @@ export function ArtworkCartel() {
         <div className="relative w-full aspect-16/10 overflow-hidden bg-gray-200">
           <Image
             src="/images/artworks/featured/pontecorvo_artwork.webp"
-            alt="Pontecorvo, Burning Man, huile sur toile"
+            alt="Alain Pontecorvo, Burning Man, huile sur toile"
             fill
             priority
             sizes="(min-width: 1024px) 900px, 100vw"
@@ -17,9 +17,7 @@ export function ArtworkCartel() {
 
         <div className="pt-6 pb-2 text-left flex flex-col md:flex-row justify-between items-start md:items-end gap-4 border-t border-gray-100 mt-4">
           <div>
-            <p className="text-[10px] uppercase tracking-[0.25em] text-accent-gold font-semibold mb-1">
-              Œuvre Vedette
-            </p>
+            <p className="text-sm text-gallery-900 mb-1">Alain Pontecorvo</p>
             <h3 className="text-xl font-serif-title font-medium text-gallery-900">Burning Man</h3>
             <p className="text-xs text-gray-500 italic mt-0.5">
               Huile sur toile, 130 x 195 cm

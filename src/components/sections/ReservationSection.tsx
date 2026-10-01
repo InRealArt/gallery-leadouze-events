@@ -6,10 +6,7 @@ export function ReservationSection() {
       <div className="max-w-3xl mx-auto px-8">
         <div className="bg-gallery-50 p-10 md:p-14 luxury-border">
           <div className="text-center mb-12">
-            <span className="text-[10px] uppercase tracking-[0.3em] font-semibold text-accent-gold block mb-2">
-              Soirée Réservée
-            </span>
-            <h2 className="text-3xl font-serif-title text-gallery-900">Demande d&apos;Invitation Nommée</h2>
+            <h2 className="text-3xl font-serif-title text-gallery-900">Demande d&apos;invitation nommée</h2>
             <p className="text-xs text-gray-500 font-light mt-3">
               Soirée privée du jeudi 5 novembre, de 18h à 22h.
             </p>

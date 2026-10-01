@@ -5,7 +5,6 @@ import { verifyTurnstileToken } from "@/lib/turnstile"
 import { TURNSTILE_ACTION_RESERVATION } from "@/lib/constants"
 import { addContactToEventList } from "@/lib/brevo"
 import { parseReservation, type ReservationFieldErrors } from "@/lib/reservation-schema"
-import { professionOptions } from "@/data/event"
 
 export interface ReservationState {
   status: "idle" | "success" | "error"
@@ -37,11 +36,7 @@ export async function submitReservation(_prev: ReservationState, formData: FormD
     return { status: "error", message: "La vérification anti-robot a échoué. Merci de réessayer." }
   }
 
-  const { profession, ...contact } = parsed.data
-  const saved = await addContactToEventList({
-    ...contact,
-    profession: professionOptions.find((option) => option.value === profession)?.label ?? profession,
-  })
+  const saved = await addContactToEventList(parsed.data)
   if (!saved) {
     return { status: "error", message: "Votre demande n'a pas pu être enregistrée. Merci de réessayer plus tard." }
   }

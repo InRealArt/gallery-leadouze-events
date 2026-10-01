@@ -9,28 +9,27 @@ export function ExpositionSection() {
       <div className="max-w-6xl mx-auto px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           <div className="lg:col-span-7">
-            <span className="text-[10px] uppercase tracking-[0.3em] font-semibold text-accent-gold block mb-3">
-              Rétrospective &amp; Rencontres
-            </span>
             <h2 className="text-3xl md:text-4xl font-serif-title text-gallery-900 mb-8 leading-snug">
               Une traversée au cœur de la création et du marché
             </h2>
             <p className="text-sm text-gray-600 mb-6 font-light leading-relaxed">
-              Tout au long de la soirée, laissez-vous guider par Alexandre Leadouze, propriétaire de cette
-              galerie emblématique du 16, avenue Matignon, et par Thibault Proust, son directeur et chef de projet
-              culturel. Fort de vingt ans d&apos;expérience chez Christie&rsquo;s, Nicolas Kaenzig animera ensuite
-              une masterclass consacrée au marché de l&apos;art : «&nbsp;Quel collectionneur êtes-vous&nbsp;?&nbsp;».
-              Enfin, Timothée Roy vous présentera InRealArt, agence de communication dédiée aux artistes, ainsi que
-              son catalogue.
+              Le temps d&apos;une soirée, Nicolas Kaenzig vous ouvre les coulisses du marché de l&apos;art. Fort de
+              vingt ans d&apos;expérience chez Christie&rsquo;s, il accompagne aujourd&apos;hui les professions
+              libérales et Family office dans la construction de leur collection. Au cours d&apos;une masterclass
+              exclusive, il vous livrera les clés pour comprendre le marché, affiner votre regard et répondre à une
+              question essentielle&nbsp;: quel collectionneur êtes-vous&nbsp;?
             </p>
-            <div className="grid grid-cols-1 gap-8 border-t border-gray-200/80 pt-8">
-              <div>
-                <span className="text-xs uppercase tracking-[0.2em] font-semibold text-gallery-900 block mb-2">
-                  Soirée sur invitation (18 h – 22 h)
-                </span>
-                <p className="text-xs text-gray-500 font-light leading-relaxed">Cocktail networking.</p>
-              </div>
-            </div>
+            <p className="text-sm text-gray-600 mb-6 font-light leading-relaxed">
+              En seconde partie de soirée, Timothée Roy vous présentera InRealArt, nouvelle agence de communication
+              dédiée au monde de l&apos;art, qui fait le lien entre artistes, professionnels du marché et professions
+              libérales. L&apos;occasion de découvrir en avant-première les œuvres du catalogue.
+            </p>
+            <p className="text-sm text-gray-600 mb-6 font-light leading-relaxed">
+              La soirée se tiendra dans un lieu d&apos;exception&nbsp;: la galerie Leadouze, adresse de prestige du
+              16, avenue Matignon et galerie de renom au cœur du quartier historique du marché de l&apos;art
+              parisien. Alexandre Leadouze et Thibault Proust, son directeur, vous y accueilleront pour prolonger
+              les échanges autour d&apos;un cocktail.
+            </p>
           </div>
 
           <div className="lg:col-span-5">

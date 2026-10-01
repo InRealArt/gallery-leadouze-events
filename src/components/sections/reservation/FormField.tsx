@@ -1,4 +1,4 @@
-import type { InputHTMLAttributes, ReactNode, SelectHTMLAttributes } from "react"
+import type { InputHTMLAttributes, ReactNode } from "react"
 
 const FIELD_CLASSES =
   "w-full bg-white border rounded-none px-4 py-3 text-xs text-gallery-900 focus:outline-none"
@@ -10,15 +10,21 @@ const FIELD_STATE_CLASSES = {
 interface FieldWrapperProps {
   id: string
   label: string
+  required?: boolean
   error?: string
   children: ReactNode
 }
 
-function FieldWrapper({ id, label, error, children }: FieldWrapperProps) {
+function FieldWrapper({ id, label, required, error, children }: FieldWrapperProps) {
   return (
     <div>
       <label htmlFor={id} className="block text-[10px] uppercase tracking-[0.2em] text-gray-500 mb-2 font-medium">
         {label}
+        {required && (
+          <span aria-hidden="true" className="ml-1 text-accent-gold">
+            *
+          </span>
+        )}
       </label>
       {children}
       {error && (
@@ -46,40 +52,8 @@ interface FormFieldProps extends InputHTMLAttributes<HTMLInputElement> {
 
 export function FormField({ label, id, error, ...props }: FormFieldProps) {
   return (
-    <FieldWrapper id={id} label={label} error={error}>
+    <FieldWrapper id={id} label={label} required={props.required} error={error}>
       <input id={id} {...props} {...fieldA11yProps(id, error)} />
-    </FieldWrapper>
-  )
-}
-
-interface SelectOption {
-  value: string
-  label: string
-}
-
-interface FormSelectProps extends SelectHTMLAttributes<HTMLSelectElement> {
-  id: string
-  label: string
-  options: SelectOption[]
-  placeholder?: string
-  error?: string
-}
-
-export function FormSelect({ label, id, options, placeholder, error, ...props }: FormSelectProps) {
-  return (
-    <FieldWrapper id={id} label={label} error={error}>
-      <select id={id} {...props} {...fieldA11yProps(id, error)}>
-        {placeholder && (
-          <option value="" disabled>
-            {placeholder}
-          </option>
-        )}
-        {options.map((option) => (
-          <option key={option.value} value={option.value}>
-            {option.label}
-          </option>
-        ))}
-      </select>
     </FieldWrapper>
   )
 }

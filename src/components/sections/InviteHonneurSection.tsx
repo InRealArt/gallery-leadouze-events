@@ -25,9 +25,6 @@ export function InviteHonneurSection() {
           </div>
 
           <div className="md:col-span-7 text-center md:text-left">
-            <span className="text-[10px] uppercase tracking-[0.3em] font-semibold text-accent-gold-light block mb-4">
-              Invité d&apos;honneur
-            </span>
             <h2 className="text-4xl md:text-5xl font-serif-title font-normal tracking-tight mb-3">
               {guestOfHonour.name}
             </h2>
@@ -35,16 +32,13 @@ export function InviteHonneurSection() {
 
             <div className="w-12 h-px bg-accent-gold mb-8 mx-auto md:mx-0" />
 
-            <p className="text-sm text-gray-300 font-light leading-relaxed mb-8">{guestOfHonour.bio}</p>
-
-            <ul className="space-y-3 text-left inline-block md:block">
-              {guestOfHonour.highlights.map((highlight) => (
-                <li key={highlight} className="flex items-start gap-3 text-xs text-gray-300 font-light">
-                  <span className="text-accent-gold-light font-serif-title text-base leading-4">—</span>
-                  {highlight}
-                </li>
+            <div className="space-y-4">
+              {guestOfHonour.bio.map((paragraph) => (
+                <p key={paragraph} className="text-sm text-gray-300 font-light leading-relaxed">
+                  {paragraph}
+                </p>
               ))}
-            </ul>
+            </div>
           </div>
         </div>
       </div>

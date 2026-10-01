@@ -1,7 +1,6 @@
 "use client"
 
 import { startTransition, useActionState, useEffect, useRef, useState, type FormEvent } from "react"
-import { professionOptions } from "@/data/event"
 import { submitReservation, type ReservationState } from "@/app/actions/reservation"
 import { TURNSTILE_ACTION_RESERVATION } from "@/lib/constants"
 import {
@@ -11,7 +10,7 @@ import {
   type ReservationFieldErrors,
 } from "@/lib/reservation-schema"
 import { SubmitButton } from "@/components/ui/Button"
-import { FormField, FormSelect } from "./FormField"
+import { FormField } from "./FormField"
 import { Turnstile } from "./Turnstile"
 
 const initialState: ReservationState = { status: "idle" }
@@ -86,6 +85,10 @@ export function ReservationForm() {
 
   return (
     <>
+      <p className="text-[11px] text-gray-500 font-light mb-6">
+        <span aria-hidden="true" className="text-accent-gold">*</span> Tous les champs sont obligatoires.
+      </p>
+
       <form ref={formRef} className="space-y-6" onSubmit={handleSubmit} onChange={handleFieldChange} noValidate>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <FormField id="firstName" name="firstName" label="Prénom" type="text" autoComplete="given-name" required error={errors.firstName} />
@@ -93,7 +96,7 @@ export function ReservationForm() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <FormField id="email" name="email" label="Email Professionnel" type="email" autoComplete="email" required error={errors.email} />
+          <FormField id="email" name="email" label="Email professionnel" type="email" autoComplete="email" required error={errors.email} />
           <FormField id="phone" name="phone" label="Téléphone" type="tel" autoComplete="tel" required error={errors.phone} />
         </div>
 
@@ -102,16 +105,7 @@ export function ReservationForm() {
           <FormField id="city" name="city" label="Ville" type="text" autoComplete="address-level2" required error={errors.city} />
         </div>
 
-        <FormSelect
-          id="profession"
-          name="profession"
-          label="Activité / Profession"
-          options={professionOptions}
-          placeholder="Sélectionner"
-          defaultValue=""
-          required
-          error={errors.profession}
-        />
+        <FormField id="profession" name="profession" label="Activité / profession" type="text" autoComplete="organization-title" required error={errors.profession} />
 
         <Turnstile action={TURNSTILE_ACTION_RESERVATION} resetKey={state.attempt} onValidChange={setIsHumanVerified} />
 
@@ -120,7 +114,7 @@ export function ReservationForm() {
           disabled={isPending || !isHumanVerified}
           className="disabled:opacity-40 disabled:cursor-not-allowed"
         >
-          {isPending ? "Envoi en cours…" : "Soumettre ma Demande"}
+          {isPending ? "Envoi en cours…" : "Soumettre ma demande"}
         </SubmitButton>
       </form>
 

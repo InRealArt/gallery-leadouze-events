@@ -11,7 +11,7 @@ export function Header() {
           href="#top"
           className="text-xs uppercase tracking-[0.25em] font-medium text-gallery-900"
         >
-          INREALART <span className="text-accent-gold font-light">|</span> GALERIE LEADOUZE
+          <span className="normal-case">InRealArt</span> <span className="text-accent-gold font-light">|</span> GALERIE LEADOUZE
         </Link>
 
         <nav className="hidden lg:flex items-center space-x-10 text-xs uppercase tracking-[0.15em] font-medium text-gray-500">
