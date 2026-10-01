@@ -84,8 +84,8 @@ export const programme: ProgrammeItem[] = [
   },
   {
     time: "19h30 – 20h00",
-    title: "Présentation d'inrealart & structuration patrimoniale",
-    description: "Intervention de Timothée Roy sur le projet inrealart et l'utilisation de l'art comme levier financier.",
+    title: "Présentation d'InRealArt & du catalogue",
+    description: "Intervention de Timothée Roy : genèse du projet inrealart et présentation des œuvres du catalogue.",
   },
   {
     time: "20h00 – 22h00",
