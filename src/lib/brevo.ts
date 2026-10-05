@@ -30,13 +30,13 @@ export function toInternationalPhone(raw: string): string | null {
 }
 
 function buildAttributes(contact: EventContact, withSms: boolean): Record<string, string> {
-  // FIRSTNAME, LASTNAME and SMS are Brevo defaults; VILLE, PROFESSION, ENTREPRISE and
+  // FIRSTNAME, LASTNAME and SMS are Brevo defaults; CITY, JOB_TITLE, ENTREPRISE and
   // TELEPHONE must exist as "Text" attributes in Brevo (Contacts > Settings > Contact attributes).
   const attributes: Record<string, string> = {
     FIRSTNAME: contact.firstName,
     LASTNAME: contact.lastName,
-    VILLE: contact.city,
-    PROFESSION: contact.profession,
+    CITY: contact.city,
+    JOB_TITLE: contact.profession,
     ENTREPRISE: contact.company,
     TELEPHONE: contact.phone,
   }
