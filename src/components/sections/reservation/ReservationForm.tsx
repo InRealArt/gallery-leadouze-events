@@ -12,6 +12,7 @@ import {
 import { SubmitButton } from "@/components/ui/Button"
 import { FormField } from "./FormField"
 import { Turnstile } from "./Turnstile"
+import { SuccessDialog } from "./SuccessDialog"
 
 const initialState: ReservationState = { status: "idle" }
 const FIELD_ERRORS_MESSAGE = "Merci de corriger les champs signalés."
@@ -37,6 +38,9 @@ export function ReservationForm() {
   const serverErrors = state.attempt !== dismissedAttempt ? state.fieldErrors : undefined
   const errors: ReservationFieldErrors = { ...serverErrors, ...clientErrors }
   const hasFieldErrors = Object.values(errors).some(Boolean)
+  // The confirmation modal opens on each successful attempt until the user closes it.
+  const [closedAttempt, setClosedAttempt] = useState<number | undefined>()
+  const isSuccessOpen = state.status === "success" && state.attempt !== closedAttempt
 
   // Keep user input on failure: only clear the form once the request succeeded.
   useEffect(() => {
@@ -118,11 +122,7 @@ export function ReservationForm() {
         </SubmitButton>
       </form>
 
-      {state.status === "success" && (
-        <div className="mt-6 p-4 bg-white border border-gray-200 text-xs text-gallery-900 text-center font-light">
-          Votre demande d&apos;invitation a bien été transmise. Nos équipes reviendront vers vous sous 24h.
-        </div>
-      )}
+      <SuccessDialog open={isSuccessOpen} onClose={() => setClosedAttempt(state.attempt)} />
 
       {alertMessage && (
         <div role="alert" className="mt-6 p-4 bg-white border border-red-200 text-xs text-red-700 text-center font-light">

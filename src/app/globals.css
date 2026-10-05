@@ -67,3 +67,31 @@ section[id] {
   border-color: #b8860b;
   color: #b8860b;
 }
+
+.success-dialog[open] {
+  animation: success-dialog-in 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.success-dialog[open]::backdrop {
+  animation: success-dialog-fade 0.4s ease;
+}
+
+@keyframes success-dialog-in {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+}
+
+@keyframes success-dialog-fade {
+  from {
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .success-dialog[open],
+  .success-dialog[open]::backdrop {
+    animation: none;
+  }
+}
