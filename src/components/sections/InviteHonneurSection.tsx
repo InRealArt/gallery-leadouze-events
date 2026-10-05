@@ -6,8 +6,8 @@ export function InviteHonneurSection() {
     <section id="invite-honneur" className="py-24 bg-gallery-900 text-white">
       <div className="max-w-5xl mx-auto px-8">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-16 items-center">
-          <div className="md:col-span-5">
-            <div className="relative max-w-xs mx-auto md:max-w-none">
+          <div className="md:col-span-4">
+            <div className="relative max-w-[13rem] mx-auto md:max-w-[15rem]">
               <div
                 aria-hidden="true"
                 className="absolute inset-0 translate-x-4 translate-y-4 border border-accent-gold/60"
@@ -17,14 +17,14 @@ export function InviteHonneurSection() {
                   src={guestOfHonour.photo}
                   alt={guestOfHonour.name}
                   fill
-                  sizes="(min-width: 768px) 360px, 320px"
+                  sizes="(min-width: 768px) 240px, 208px"
                   className="object-cover grayscale"
                 />
               </div>
             </div>
           </div>
 
-          <div className="md:col-span-7 text-center md:text-left">
+          <div className="md:col-span-8 text-center md:text-left">
             <h2 className="text-4xl md:text-5xl font-serif-title font-normal tracking-tight mb-3">
               {guestOfHonour.name}
             </h2>

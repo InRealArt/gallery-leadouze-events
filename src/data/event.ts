@@ -16,6 +16,7 @@ export interface Speaker {
   role: string
   bio: string
   photo: string
+  photoClassName?: string
 }
 
 export const speakers: Speaker[] = [
@@ -24,12 +25,14 @@ export const speakers: Speaker[] = [
     role: "Expert en marché de l'art",
     bio: "Vingt ans chez Christie's. Il conseille aujourd'hui des professions libérales et des family offices dans la construction de leur collection, et anime la masterclass « Quel collectionneur êtes-vous\u00a0? ».",
     photo: "/images/intervenants/Nicolas.webp",
+    photoClassName: "scale-[1.35] origin-[50%_35%]",
   },
   {
     name: "Timothée Roy",
     role: "Fondateur d'InRealArt",
     bio: "Agent d'artistes, il a fondé InRealArt, une agence de communication qui met en relation artistes, professionnels du marché et professions libérales.",
     photo: "/images/intervenants/Timothee.webp",
+    photoClassName: "object-[50%_25%]",
   },
 ]
 
