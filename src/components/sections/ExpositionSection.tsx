@@ -13,22 +13,30 @@ export function ExpositionSection() {
               Une traversée au cœur de la création et du marché
             </h2>
             <p className="text-sm text-gray-600 mb-6 font-light leading-relaxed">
-              Le temps d&apos;une soirée, Nicolas Kaenzig vous ouvre les coulisses du marché de l&apos;art. Fort de
-              vingt ans d&apos;expérience chez Christie&rsquo;s, il accompagne aujourd&apos;hui les professions
-              libérales et Family office dans la construction de leur collection. Au cours d&apos;une masterclass
-              exclusive, il vous livrera les clés pour comprendre le marché, affiner votre regard et répondre à une
-              question essentielle&nbsp;: quel collectionneur êtes-vous&nbsp;?
-            </p>
-            <p className="text-sm text-gray-600 mb-6 font-light leading-relaxed">
-              En seconde partie de soirée, Timothée Roy vous présentera InRealArt, nouvelle agence de communication
-              dédiée au monde de l&apos;art, qui fait le lien entre artistes, professionnels du marché et professions
-              libérales. L&apos;occasion de découvrir en avant-première les œuvres du catalogue.
-            </p>
-            <p className="text-sm text-gray-600 mb-6 font-light leading-relaxed">
               La soirée se tiendra dans un lieu d&apos;exception&nbsp;: la galerie Leadouze, adresse de prestige du
               16, avenue Matignon et galerie de renom au cœur du quartier historique du marché de l&apos;art
               parisien. Alexandre Leadouze et Thibault Proust, son directeur, vous y accueilleront pour prolonger
               les échanges autour d&apos;un cocktail.
+            </p>
+            <p className="text-sm text-gray-600 mb-6 font-light leading-relaxed">
+              Lors de cette soirée, Nicolas Kaenzig vous partagera son expérience. Fort de 20 ans en tant que
+              spécialiste chez Christie&rsquo;s, il accompagne désormais les professions libérales et family offices
+              dans leurs projets artistiques et la construction de leur collection. Pendant 30 minutes, il vous
+              livrera les clés pour comprendre le marché, affiner votre regard et répondre à une question
+              essentielle&nbsp;: quel collectionneur êtes-vous&nbsp;?
+            </p>
+            <blockquote className="text-sm text-gray-600 mb-6 font-light italic leading-relaxed border-l-2 border-gallery-900/20 pl-4">
+              «&nbsp;Avenue Matignon, cela fait quarante ans que j&apos;accompagne les passionnés d&apos;art dans le
+              développement de leur collection. Entouré de Nicolas et Timothée, deux experts dont j&apos;apprécie
+              profondément l&apos;expérience et le parcours, nous vous donnons rendez-vous le 5 novembre. Ils
+              partageront avec vous leur vision et leurs conseils, avant de prolonger la discussion autour d&apos;un
+              cocktail au sein de la rétrospective Pontecorvo. Et si c&apos;était le moment d&apos;initier votre
+              propre collection&nbsp;?&nbsp;»
+            </blockquote>
+            <p className="text-sm text-gray-600 mb-6 font-light leading-relaxed">
+              Enfin, Timothée Roy présentera InRealArt, la nouvelle agence de communication qui connecte artistes,
+              acteurs du marché de l&apos;art et professions libérales. Vous y découvrirez en avant-première les
+              œuvres du catalogue.
             </p>
           </div>
 
