@@ -28,13 +28,13 @@ export function InviteHonneurSection() {
             <h2 className="text-4xl md:text-5xl font-serif-title font-normal tracking-tight mb-3">
               {guestOfHonour.name}
             </h2>
-            <p className="text-[11px] uppercase tracking-[0.25em] text-gray-400 mb-8">{guestOfHonour.role}</p>
+            <p className="text-[13px] uppercase tracking-[0.25em] text-gray-400 mb-8">{guestOfHonour.role}</p>
 
             <div className="w-12 h-px bg-accent-gold mb-8 mx-auto md:mx-0" />
 
             <div className="space-y-4">
               {guestOfHonour.bio.map((paragraph) => (
-                <p key={paragraph} className="text-sm text-gray-300 font-light leading-relaxed">
+                <p key={paragraph} className="text-base text-gray-300 font-light leading-relaxed">
                   {paragraph}
                 </p>
               ))}

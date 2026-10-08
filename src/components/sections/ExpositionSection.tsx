@@ -12,19 +12,19 @@ export function ExpositionSection() {
             <h2 className="text-3xl md:text-4xl font-serif-title text-gallery-900 mb-8 leading-snug">
               Une traversée au cœur de la création et du marché
             </h2>
-            <p className="text-sm text-gray-600 mb-6 font-light leading-relaxed">
+            <p className="text-lg text-gray-600 mb-6 font-light leading-relaxed">
               La soirée se déroulera dans un cadre d&apos;exception&nbsp;: la Galerie Leadouze, adresse prestigieuse
               située au 16, avenue Matignon et haut lieu du marché de l&apos;art parisien. Alexandre Leadouze et
               Thibault Proust, son directeur, auront le grand plaisir de vous y accueillir.
             </p>
-            <p className="text-sm text-gray-600 mb-6 font-light leading-relaxed">
+            <p className="text-lg text-gray-600 mb-6 font-light leading-relaxed">
               À cette occasion, Nicolas Kaenzig partagera avec vous son expérience. Fort de 20 ans passés comme
               spécialiste chez Christie&rsquo;s, il accompagne aujourd&apos;hui les professions libérales et les
               family offices dans leurs projets artistiques et la constitution de leur collection. Au cours
               d&apos;une intervention de 30 minutes, il vous livrera les clés pour comprendre le marché, affiner
               votre regard et répondre à une question essentielle&nbsp;: quel collectionneur êtes-vous&nbsp;?
             </p>
-            <p className="text-sm text-gray-600 mb-6 font-light leading-relaxed">
+            <p className="text-lg text-gray-600 mb-6 font-light leading-relaxed">
               Enfin, Timothée Roy présentera InRealArt, la nouvelle agence de communication qui connecte artistes,
               acteurs du marché de l&apos;art et professions libérales. Vous y découvrirez en avant-première les
               œuvres du catalogue.

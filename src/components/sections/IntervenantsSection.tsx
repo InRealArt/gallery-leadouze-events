@@ -23,7 +23,7 @@ export function IntervenantsSection() {
                 </div>
                 <h3 className="text-xl font-semibold text-gallery-900 mb-1">{speaker.name}</h3>
                 <p className="text-sm text-accent-gold tracking-wide mb-4">{speaker.role}</p>
-                <p className="text-base text-gray-600 font-light leading-relaxed text-left">{speaker.bio}</p>
+                <p className="text-lg text-gray-600 font-light leading-relaxed text-left">{speaker.bio}</p>
               </div>
             </div>
           ))}

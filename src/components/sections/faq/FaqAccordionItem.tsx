@@ -12,7 +12,7 @@ export function FaqAccordionItem({ question, answer }: FaqItem) {
     <div className="bg-white luxury-border p-6">
       <button
         type="button"
-        className="w-full text-left font-medium text-sm text-gallery-900 flex justify-between items-center"
+        className="w-full text-left font-medium text-lg text-gallery-900 flex justify-between items-center"
         aria-expanded={open}
         onClick={() => setOpen((prev) => !prev)}
       >
@@ -22,7 +22,7 @@ export function FaqAccordionItem({ question, answer }: FaqItem) {
         />
       </button>
       {open && (
-        <div className="pt-4 text-xs text-gray-500 font-light leading-relaxed border-t border-gray-100 mt-4">
+        <div className="pt-4 text-base text-gray-500 font-light leading-relaxed border-t border-gray-100 mt-4">
           <p>{answer}</p>
           <LinkButton href="#reservation" variant="outline" className="inline-block mt-6 px-6 py-2.5">
             Je m&apos;inscris

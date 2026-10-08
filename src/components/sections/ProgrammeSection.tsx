@@ -13,12 +13,12 @@ export function ProgrammeSection() {
               key={item.time}
               className="bg-white p-8 luxury-border flex flex-col md:flex-row justify-between items-start md:items-center gap-6"
             >
-              <span className="text-xs uppercase tracking-[0.25em] font-semibold text-accent-gold shrink-0">
+              <span className="text-sm uppercase tracking-[0.25em] font-semibold text-accent-gold shrink-0">
                 {item.time}
               </span>
               <div className="md:text-right">
-                <h3 className="text-base font-serif-title font-medium text-gallery-900">{item.title}</h3>
-                <p className="text-xs text-gray-500 font-light mt-1">{item.description}</p>
+                <h3 className="text-lg font-serif-title font-medium text-gallery-900">{item.title}</h3>
+                <p className="text-base text-gray-500 font-light mt-1">{item.description}</p>
               </div>
             </div>
           ))}

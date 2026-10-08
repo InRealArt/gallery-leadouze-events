@@ -4,6 +4,8 @@
   --font-sans: var(--font-plus-jakarta-sans), sans-serif;
   --font-serif-title: var(--font-playfair-display), serif;
 
+  --text-xs: 0.8125rem;
+
   --color-gallery-50: #faf9f8;
   --color-gallery-100: #f5f4f0;
   --color-gallery-200: #e6e4df;

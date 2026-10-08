@@ -24,7 +24,7 @@ export function ArtworkCartel() {
             </p>
           </div>
           <div className="text-left md:text-right">
-            <span className="text-[10px] uppercase tracking-[0.2em] text-gray-400 block">Galerie Leadouze</span>
+            <span className="text-[12px] uppercase tracking-[0.2em] text-gray-400 block">Galerie Leadouze</span>
             <span className="text-xs font-medium text-gallery-900">Disponible à l&apos;acquisition</span>
           </div>
         </div>

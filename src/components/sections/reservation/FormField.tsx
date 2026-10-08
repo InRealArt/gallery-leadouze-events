@@ -18,7 +18,7 @@ interface FieldWrapperProps {
 function FieldWrapper({ id, label, required, error, children }: FieldWrapperProps) {
   return (
     <div>
-      <label htmlFor={id} className="block text-[10px] uppercase tracking-[0.2em] text-gray-500 mb-2 font-medium">
+      <label htmlFor={id} className="block text-[12px] uppercase tracking-[0.2em] text-gray-500 mb-2 font-medium">
         {label}
         {required && (
           <span aria-hidden="true" className="ml-1 text-accent-gold">
@@ -28,7 +28,7 @@ function FieldWrapper({ id, label, required, error, children }: FieldWrapperProp
       </label>
       {children}
       {error && (
-        <p id={`${id}-error`} className="mt-2 text-[11px] text-red-700 font-light">
+        <p id={`${id}-error`} className="mt-2 text-[13px] text-red-700 font-light">
           {error}
         </p>
       )}

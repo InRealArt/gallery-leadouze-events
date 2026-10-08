@@ -89,7 +89,7 @@ export function ReservationForm() {
 
   return (
     <>
-      <p className="text-[11px] text-gray-500 font-light mb-6">
+      <p className="text-[13px] text-gray-500 font-light mb-6">
         <span aria-hidden="true" className="text-accent-gold">*</span> Tous les champs sont obligatoires.
       </p>
 

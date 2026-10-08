@@ -7,7 +7,6 @@ export const navLinks: NavLink[] = [
   { label: "Exposition", href: "#exposition" },
   { label: "Intervenants", href: "#intervenants" },
   { label: "Déroulé", href: "#programme" },
-  { label: "Défiscalisation", href: "#defiscalisation" },
   { label: "FAQ", href: "#faq" },
 ]
 

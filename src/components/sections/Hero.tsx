@@ -10,7 +10,7 @@ export function Hero() {
           {SITE.title}
         </h1>
 
-        <p className="text-sm md:text-base text-gray-500 max-w-2xl mx-auto mb-12 font-light leading-relaxed tracking-wide">
+        <p className="text-base md:text-lg text-gray-500 max-w-2xl mx-auto mb-12 font-light leading-relaxed tracking-wide">
           Une rencontre privilégiée autour de l&apos;art et du collectionnisme, réunissant exposition, masterclass dédiée au marché de l&apos;art
           <br />
           et cocktail.
