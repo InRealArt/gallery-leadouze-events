@@ -3,11 +3,15 @@ import { guestOfHonour } from "@/data/event"
 
 export function InviteHonneurSection() {
   return (
-    <section id="invite-honneur" className="py-24 bg-gallery-900 text-white">
+    <section id="invite-honneur" className="pt-14 pb-24 bg-gallery-900 text-white">
       <div className="max-w-5xl mx-auto px-8">
+        <h2 className="mb-14 text-center font-serif-title font-normal text-4xl md:text-5xl text-accent-gold-light">
+          Invité d’honneur
+        </h2>
+
         <div className="grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-16 items-center">
           <div className="md:col-span-4">
-            <div className="relative max-w-[13rem] mx-auto md:max-w-[15rem]">
+            <div className="relative max-w-[13rem] mx-auto md:mx-0 md:max-w-[15rem]">
               <div
                 aria-hidden="true"
                 className="absolute inset-0 translate-x-4 translate-y-4 border border-accent-gold/60"
@@ -25,9 +29,9 @@ export function InviteHonneurSection() {
           </div>
 
           <div className="md:col-span-8 text-center md:text-left">
-            <h2 className="text-4xl md:text-5xl font-serif-title font-normal tracking-tight mb-3">
+            <h3 className="text-4xl md:text-5xl font-serif-title font-normal tracking-tight mb-3">
               {guestOfHonour.name}
-            </h2>
+            </h3>
             <p className="text-[13px] uppercase tracking-[0.25em] text-gray-400 mb-8">{guestOfHonour.role}</p>
 
             <div className="w-12 h-px bg-accent-gold mb-8 mx-auto md:mx-0" />

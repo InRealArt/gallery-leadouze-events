@@ -5,7 +5,7 @@ export function GalleristQuoteSection() {
   return (
     <section id="mot-du-galeriste" className="py-24 border-t border-gray-100 bg-white">
       <div className="max-w-5xl mx-auto px-8">
-        <figure className="flex flex-col items-center gap-10">
+        <figure className="flex flex-col md:flex-row items-center gap-10 md:gap-12">
           <div className="shrink-0 text-center">
             <div className="relative w-56 h-56 md:w-64 md:h-64 mx-auto rounded-full overflow-hidden bg-gallery-50 border border-gray-200">
               <Image
@@ -24,10 +24,10 @@ export function GalleristQuoteSection() {
             </figcaption>
           </div>
 
-          <div className="relative w-full max-w-3xl bg-gallery-50 luxury-border p-8 md:p-10">
+          <div className="relative flex-1 bg-gallery-50 luxury-border p-8 md:p-10">
             <span
               aria-hidden="true"
-              className="absolute w-4 h-4 bg-gallery-50 rotate-45 left-1/2 -top-2 -translate-x-1/2 border-l border-t border-[rgba(15,14,13,0.08)]"
+              className="absolute w-4 h-4 bg-gallery-50 rotate-45 left-1/2 -top-2 -translate-x-1/2 border-l border-t border-[rgba(15,14,13,0.08)] md:left-0 md:top-1/2 md:-translate-y-1/2 md:border-t-0 md:border-b"
             />
             <blockquote className="font-serif-title italic text-lg md:text-xl text-gallery-900 leading-relaxed space-y-4">
               {galleristQuote.quote.map((paragraph, index) => (
