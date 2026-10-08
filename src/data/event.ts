@@ -40,8 +40,13 @@ export const galleristQuote = {
   name: "Alexandre Leadouze",
   role: "Directeur de la galerie Leadouze",
   photo: "/images/intervenants/Alexandre.webp",
-  quote:
-    "Depuis quarante ans, avenue Matignon, j'aide ceux qui aiment l'art à devenir collectionneurs. Le 5 novembre, Nicolas Kaenzig vous en livrera les clés, InRealArt vous dévoilera sa vision, et nous poursuivrons autour d'un cocktail, au cœur de la rétrospective Pontecorvo. Et si votre collection commençait ce soir-là\u00a0?",
+  quote: [
+    "Avenue Matignon, cela fait maintenant quarante ans que j'accompagne les passionnés d'art dans la construction et le développement de leur collection.",
+    "Le 13 novembre, je vous donne rendez-vous aux côtés de Nicolas et Timothée, deux experts dont j'apprécie particulièrement l'expérience et le regard.",
+    "Ils partageront avec vous leur vision et quelques conseils pour vous accompagner dans vos réflexions autour de la collection.",
+    "Nous prolongerons ensuite la rencontre autour d'un cocktail, au cœur de la rétrospective Pontecorvo.",
+    "Et si c'était le moment d'initier votre propre collection\u00a0?",
+  ],
 }
 
 export interface GuestOfHonour {

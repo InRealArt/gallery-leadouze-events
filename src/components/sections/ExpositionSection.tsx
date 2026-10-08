@@ -33,23 +33,23 @@ export function ExpositionSection() {
 
           <div className="lg:col-span-5">
             <div className="bg-white p-4 luxury-border shadow-sm space-y-4">
-              <div className="aspect-[4/3] overflow-hidden bg-gallery-50">
-                <iframe
-                  title={`Plan d'accès — ${SITE.gallery.name}`}
-                  src={`https://www.google.com/maps?q=${MAP_QUERY}&z=16&output=embed`}
-                  className="w-full h-full border-0 grayscale"
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
+              <div className="relative aspect-[4/3] overflow-hidden">
+                <Image
+                  src="/images/galerie/gallerie_lea12_1.webp"
+                  alt={`Espace d'exposition de la ${SITE.gallery.name}`}
+                  fill
+                  sizes="(min-width: 1024px) 460px, 100vw"
+                  className="object-cover"
                 />
               </div>
               <div className="grid grid-cols-2 gap-4">
-                <div className="relative aspect-[3/4] overflow-hidden">
-                  <Image
-                    src="/images/galerie/gallerie_lea12_1.webp"
-                    alt={`Espace d'exposition de la ${SITE.gallery.name}`}
-                    fill
-                    sizes="(min-width: 1024px) 220px, 50vw"
-                    className="object-cover"
+                <div className="aspect-[3/4] overflow-hidden bg-gallery-50">
+                  <iframe
+                    title={`Plan d'accès — ${SITE.gallery.name}`}
+                    src={`https://www.google.com/maps?q=${MAP_QUERY}&z=16&output=embed`}
+                    className="w-full h-full border-0 grayscale"
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
                   />
                 </div>
                 <div className="relative aspect-[3/4] overflow-hidden">
