@@ -56,13 +56,13 @@ export interface GuestOfHonour {
 }
 
 export const guestOfHonour: GuestOfHonour = {
-  name: "Xavier Près",
-  role: "Avocat associé chez VALTHER",
+  name: "Jacques Séguéla",
+  role: "Publicitaire et complice d’Alain depuis plus de 20 ans",
   bio: [
-    "Docteur en droit et spécialiste de la propriété intellectuelle, Xavier Près conseille depuis plus de vingt ans des clients publics et privés en droit du marché de l'art et du patrimoine culturel.",
-    "Ancien responsable du service juridique du musée du Louvre, il enseigne aujourd'hui à Sciences Po et à l'Université Paris-Panthéon-Assas.",
+    "Figure incontournable de la publicité française, Jacques Séguéla a collaboré pendant plus de vingt ans avec Alain, partageant avec lui une même culture de la créativité et de l’audace.",
+    "Aujourd’hui, il apporte naturellement son soutien à Alain et à InRealArt, dans une aventure qui fait se rencontrer l’art, l’innovation et de nouvelles façons de valoriser les œuvres.",
   ],
-  photo: "/images/intervenants/Xavier.webp",
+  photo: "/images/intervenants/Jacques-Seguela.webp",
 }
 
 export interface ProgrammeItem {
