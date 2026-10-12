@@ -99,6 +99,7 @@ export interface FaqItem {
   answer: string
 }
 
+
 export const faqItems: FaqItem[] = [
   {
     question: "En quoi consiste l'exposition consacrée à Alain Pontecorvo ?",
