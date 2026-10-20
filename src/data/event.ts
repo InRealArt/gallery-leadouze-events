@@ -41,7 +41,7 @@ export const galleristQuote = {
   photo: "/images/intervenants/Alexandre.webp",
   quote: [
     "Avenue Matignon, cela fait maintenant quarante ans que j'accompagne les passionnés d'art dans la construction et le développement de leur collection.",
-    "Le 13 novembre, je vous donne rendez-vous aux côtés de Nicolas et Timothée, deux experts dont j'apprécie particulièrement l'expérience et le regard.",
+    "Le 12 novembre, je vous donne rendez-vous aux côtés de Nicolas et Timothée, deux experts dont j'apprécie particulièrement l'expérience et le regard.",
     "Ils partageront avec vous leur vision et quelques conseils pour vous accompagner dans vos réflexions autour de la collection.",
     "Nous prolongerons ensuite la rencontre autour d'un cocktail, au cœur de la rétrospective Pontecorvo.",
     "Et si c'était le moment d'initier votre propre collection\u00a0?",
