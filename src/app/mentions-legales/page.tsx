@@ -28,7 +28,7 @@ function InfoLine({ label, value }: { label: string; value: string }) {
 }
 
 export default function MentionsLegalesPage() {
-  const { publisher, partner, host } = legalInfo
+  const { publisher, partner, host, domainProvider, processors } = legalInfo
 
   return (
     <>
@@ -55,12 +55,16 @@ export default function MentionsLegalesPage() {
           <p className="text-sm text-gray-500 font-light mb-12">Dernière mise à jour : {legalInfo.lastUpdated}</p>
 
           <LegalBlock title="Éditeur du site">
-            <InfoLine label="Société" value={`${publisher.name} — ${publisher.legalForm}`} />
-            <InfoLine label="Siège social" value={publisher.address} />
+            <InfoLine label="Société" value={`${publisher.name} — ${publisher.status}`} />
             <InfoLine label="Immatriculation" value={publisher.registration} />
-            <InfoLine label="N° de TVA intracommunautaire" value={publisher.vatNumber} />
-            <InfoLine label="Contact" value={publisher.email} />
+            <InfoLine label="Siège social" value={publisher.address} />
+            <InfoLine label="Représentant" value={`${publisher.representative}, ${publisher.representativeRole}`} />
             <InfoLine label="Directeur de la publication" value={publisher.director} />
+            <InfoLine label="Contact" value={publisher.email} />
+            <p className="text-sm text-gray-500">
+              La société étant en cours de formation, sa forme juridique, son numéro d&apos;immatriculation et son capital
+              social seront précisés dès son immatriculation.
+            </p>
           </LegalBlock>
 
           <LegalBlock title="Lieu de l'événement">
@@ -73,6 +77,7 @@ export default function MentionsLegalesPage() {
             <InfoLine label="Hébergeur" value={host.name} />
             <InfoLine label="Adresse" value={host.address} />
             <InfoLine label="Site web" value={host.website} />
+            <InfoLine label="Nom de domaine et DNS" value={`${domainProvider.name} — ${domainProvider.address} — ${domainProvider.website}`} />
           </LegalBlock>
 
           <LegalBlock title="Propriété intellectuelle">
@@ -87,26 +92,79 @@ export default function MentionsLegalesPage() {
             </p>
           </LegalBlock>
 
-          <LegalBlock title="Données personnelles">
+          <LegalBlock title="Responsabilité">
             <p>
-              Les informations recueillies via le formulaire de demande d&apos;invitation (nom, prénom, e-mail,
-              téléphone, entreprise, ville, activité) sont utilisées uniquement pour la gestion des invitations à
-              l&apos;événement et la communication qui s&apos;y rapporte. Elles sont enregistrées auprès de notre
-              prestataire d&apos;e-mailing Brevo.
+              {publisher.name} s&apos;efforce de fournir des informations exactes et à jour, mais ne peut garantir
+              l&apos;absence d&apos;erreurs ou d&apos;omissions. Le programme, les horaires et les intervenants de
+              l&apos;événement peuvent être modifiés sans préavis. L&apos;accès au site peut être interrompu pour des
+              raisons de maintenance ou techniques, sans que cela ouvre droit à indemnité.
             </p>
             <p>
-              Conformément au Règlement général sur la protection des données (RGPD) et à la loi Informatique et
-              Libertés, vous disposez d&apos;un droit d&apos;accès, de rectification, d&apos;effacement,
-              d&apos;opposition et de portabilité de vos données. Pour l&apos;exercer, écrivez à{" "}
-              {publisher.email}. Vous pouvez également introduire une réclamation auprès de la CNIL (www.cnil.fr).
+              Le site peut contenir des liens vers des sites tiers dont {publisher.name} ne contrôle pas le contenu et
+              n&apos;assume aucune responsabilité.
+            </p>
+          </LegalBlock>
+
+          <LegalBlock title="Données personnelles">
+            <p>
+              <strong className="font-medium text-gallery-900">Responsable du traitement&nbsp;:</strong>{" "}
+              {publisher.name}, {publisher.address}.
+            </p>
+            <p>
+              <strong className="font-medium text-gallery-900">Données collectées&nbsp;:</strong> via le formulaire de
+              demande d&apos;invitation, vos nom, prénom, adresse e-mail professionnelle, numéro de téléphone,
+              entreprise, ville et activité ou profession.
+            </p>
+            <p>
+              <strong className="font-medium text-gallery-900">Finalités et base légale&nbsp;:</strong> traiter votre
+              demande d&apos;invitation, gérer la liste des invités et vous communiquer les informations pratiques liées
+              à l&apos;événement, sur la base de l&apos;exécution de mesures précontractuelles prises à votre demande et
+              de notre intérêt légitime à organiser l&apos;événement.
+            </p>
+            <p>
+              <strong className="font-medium text-gallery-900">Destinataires&nbsp;:</strong> les équipes
+              d&apos;{publisher.name} et de la {partner.name}, ainsi que les prestataires techniques suivants, qui
+              agissent en qualité de sous-traitants&nbsp;:
+            </p>
+            <ul className="list-disc pl-6 space-y-1">
+              {processors.map((processor) => (
+                <li key={processor.name}>
+                  {processor.name} — {processor.purpose} ({processor.location}).
+                </li>
+              ))}
+            </ul>
+            <p>
+              Certains de ces prestataires sont situés hors de l&apos;Union européenne. Les transferts de données
+              reposent sur les garanties prévues par le RGPD (décision d&apos;adéquation ou clauses contractuelles
+              types).
+            </p>
+            <p>
+              <strong className="font-medium text-gallery-900">Durée de conservation&nbsp;:</strong> vos données sont
+              conservées pendant la durée nécessaire à l&apos;organisation de l&apos;événement, puis au maximum trois
+              ans à compter de notre dernier contact, sauf demande de suppression de votre part.
+            </p>
+            <p>
+              <strong className="font-medium text-gallery-900">Vos droits&nbsp;:</strong> conformément au Règlement
+              général sur la protection des données (RGPD) et à la loi Informatique et Libertés, vous disposez d&apos;un
+              droit d&apos;accès, de rectification, d&apos;effacement, d&apos;opposition, de limitation et de
+              portabilité de vos données. Pour l&apos;exercer, écrivez à {publisher.email}. Vous pouvez également
+              introduire une réclamation auprès de la CNIL (www.cnil.fr).
             </p>
           </LegalBlock>
 
           <LegalBlock title="Cookies et services tiers">
             <p>
-              Ce site n&apos;utilise pas de cookies publicitaires. Le formulaire est protégé contre les envois
-              automatisés par Cloudflare Turnstile, et le plan d&apos;accès est fourni par Google Maps&nbsp;; ces
-              services peuvent déposer des cookies techniques nécessaires à leur fonctionnement.
+              Ce site n&apos;utilise pas de cookies publicitaires ni d&apos;outil de mesure d&apos;audience. Le
+              formulaire est protégé contre les envois automatisés par Cloudflare Turnstile, et le plan d&apos;accès est
+              fourni par Google Maps&nbsp;; ces services peuvent déposer des cookies ou traceurs techniques nécessaires
+              à leur fonctionnement.
+            </p>
+          </LegalBlock>
+
+          <LegalBlock title="Droit applicable">
+            <p>
+              Les présentes mentions légales sont soumises au droit français. En cas de litige, et à défaut de
+              résolution amiable, les tribunaux français sont seuls compétents.
             </p>
           </LegalBlock>
         </div>
