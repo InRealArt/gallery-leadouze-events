@@ -57,9 +57,9 @@ export interface GuestOfHonour {
 
 export const guestOfHonour: GuestOfHonour = {
   name: "Jacques Séguéla",
-  role: "Publicitaire et complice d’Alain depuis plus de 20 ans",
+  role: "Publicitaire et complice d’Alain depuis plus de 14 ans",
   bio: [
-    "Figure incontournable de la publicité française, Jacques Séguéla a collaboré pendant plus de vingt ans avec Alain, partageant avec lui une même culture de la créativité et de l’audace.",
+    "Figure incontournable de la publicité française, Jacques Séguéla a collaboré pendant plus de quatorze ans avec Alain, partageant avec lui une même culture de la créativité et de l’audace.",
     "Aujourd’hui, il apporte naturellement son soutien à Alain et à InRealArt, dans une aventure qui fait se rencontrer l’art, l’innovation et de nouvelles façons de valoriser les œuvres.",
   ],
   photo: "/images/intervenants/Jacques-Seguela.webp",

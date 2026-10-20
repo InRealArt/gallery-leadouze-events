@@ -54,7 +54,7 @@ export function SuccessDialog({ open, onClose }: SuccessDialogProps) {
           <div className="mt-8 pt-6 border-t border-gray-100">
             <span className="text-[12px] uppercase tracking-[0.2em] text-gray-400 block">Galerie Leadouze</span>
             <span className="text-xs font-medium text-gallery-900 block mt-1">
-              Jeudi 5 novembre, de 18h à 22h
+              Jeudi 12 novembre, de 18h à 22h
             </span>
             <span className="text-xs text-gray-500 italic block mt-0.5">16 avenue Matignon, Paris 8e</span>
           </div>
