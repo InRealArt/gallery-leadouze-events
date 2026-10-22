@@ -37,7 +37,7 @@ export const speakers: Speaker[] = [
 
 export const galleristQuote = {
   name: "Alexandre Leadouze",
-  role: "Directeur de la galerie Leadouze",
+  role: "Fondateur de la galerie Leadouze",
   photo: "/images/intervenants/Alexandre.webp",
   quote: [
     "Avenue Matignon, cela fait maintenant quarante ans que j'accompagne les passionnés d'art dans la construction et le développement de leur collection.",
@@ -62,7 +62,7 @@ export const guestOfHonour: GuestOfHonour = {
     "Figure incontournable de la publicité française, Jacques Séguéla a collaboré pendant plus de quatorze ans avec Alain, partageant avec lui une même culture de la créativité et de l’audace.",
     "Aujourd’hui, il apporte naturellement son soutien à Alain et à InRealArt, dans une aventure qui fait se rencontrer l’art, l’innovation et de nouvelles façons de valoriser les œuvres.",
   ],
-  photo: "/images/intervenants/Jacques-Seguela.webp",
+  photo: "/images/intervenants/seguela.webp",
 }
 
 export interface ProgrammeItem {

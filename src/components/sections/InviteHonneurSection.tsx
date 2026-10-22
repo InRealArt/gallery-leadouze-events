@@ -26,6 +26,11 @@ export function InviteHonneurSection() {
                 />
               </div>
             </div>
+            <p className="mt-8 max-w-[13rem] mx-auto md:mx-0 md:max-w-[15rem] text-xs text-gray-400 text-center md:text-left">
+              Source &amp; Crédits :
+              <br />
+              www.jacques-seguela.com
+            </p>
           </div>
 
           <div className="md:col-span-8 text-center md:text-left">
