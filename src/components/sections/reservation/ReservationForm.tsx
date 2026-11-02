@@ -1,5 +1,6 @@
 "use client"
 
+import Link from "next/link"
 import { startTransition, useActionState, useEffect, useRef, useState, type FormEvent } from "react"
 import { submitReservation, type ReservationState } from "@/app/actions/reservation"
 import { TURNSTILE_ACTION_RESERVATION } from "@/lib/constants"
@@ -52,6 +53,10 @@ export function ReservationForm() {
     event.preventDefault()
     const form = event.currentTarget
     const formData = new FormData(form)
+    // Read at submit time: the form reset cannot lose it, and anchor links keep the query string.
+    const invitation = new URLSearchParams(window.location.search)
+    formData.set("invitationSource", invitation.get("s") ?? "")
+    formData.set("invitationToken", invitation.get("i") ?? "")
 
     setDismissedAttempt(state.attempt)
 
@@ -90,7 +95,7 @@ export function ReservationForm() {
   return (
     <>
       <p className="text-[13px] text-gray-500 font-light mb-6">
-        <span aria-hidden="true" className="text-accent-gold">*</span> Tous les champs sont obligatoires.
+        <span aria-hidden="true" className="text-accent-gold">*</span> Champs obligatoires.
       </p>
 
       <form ref={formRef} className="space-y-6" onSubmit={handleSubmit} onChange={handleFieldChange} noValidate>
@@ -111,6 +116,8 @@ export function ReservationForm() {
 
         <FormField id="profession" name="profession" label="Activité / profession" type="text" autoComplete="organization-title" required error={errors.profession} />
 
+        <FormField id="companion" name="companion" label="Accompagnant (facultatif, 1 personne maximum)" type="text" autoComplete="off" error={errors.companion} />
+
         <Turnstile action={TURNSTILE_ACTION_RESERVATION} resetKey={state.attempt} onValidChange={setIsHumanVerified} />
 
         <SubmitButton
@@ -118,8 +125,17 @@ export function ReservationForm() {
           disabled={isPending || !isHumanVerified}
           className="disabled:opacity-40 disabled:cursor-not-allowed"
         >
-          {isPending ? "Envoi en cours…" : "Soumettre ma demande"}
+          {isPending ? "Envoi en cours…" : "Confirmer mon inscription"}
         </SubmitButton>
+
+        <p className="text-[12px] text-gray-500 font-light">
+          Vos données servent à gérer votre inscription et à vous envoyer les informations sur cet événement. Pour
+          exercer vos droits, consultez les{" "}
+          <Link href="/mentions-legales" className="underline">
+            mentions légales
+          </Link>
+          .
+        </p>
       </form>
 
       <SuccessDialog open={isSuccessOpen} onClose={() => setClosedAttempt(state.attempt)} />

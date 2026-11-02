@@ -38,7 +38,7 @@ export async function submitReservation(_prev: ReservationState, formData: FormD
 
   const saved = await addContactToEventList(parsed.data)
   if (!saved) {
-    return { status: "error", message: "Votre demande n'a pas pu être enregistrée. Merci de réessayer plus tard." }
+    return { status: "error", message: "Votre inscription n'a pas pu être enregistrée. Merci de réessayer plus tard." }
   }
 
   return { status: "success" }
