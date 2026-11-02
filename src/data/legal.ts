@@ -25,7 +25,7 @@ export const legalInfo = {
     website: "https://www.ovhcloud.com",
   },
   processors: [
-    { name: "Brevo (Sendinblue SAS)", purpose: "enregistrement des inscriptions et envoi d'e-mails", location: "Paris, France" },
+    { name: "Brevo (Sendinblue SAS)", purpose: "enregistrement des demandes d'invitation et envoi d'e-mails", location: "Paris, France" },
     { name: "Cloudflare, Inc.", purpose: "protection anti-robot du formulaire (Turnstile)", location: "États-Unis" },
     { name: "Vercel Inc.", purpose: "hébergement et diffusion du site", location: "États-Unis" },
     { name: "Google Maps (Google Ireland Limited)", purpose: "plan d'accès à la galerie", location: "Irlande / États-Unis" },

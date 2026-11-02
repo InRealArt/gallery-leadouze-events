@@ -9,9 +9,6 @@ export interface EventContact {
   city: string
   profession: string
   company: string
-  companion?: string
-  invitationSource?: "pro" | "presse"
-  invitationToken?: string
 }
 
 interface BrevoError {
@@ -32,10 +29,9 @@ export function toInternationalPhone(raw: string): string | null {
   return null
 }
 
-export function buildAttributes(contact: EventContact, withSms: boolean): Record<string, string> {
-  // FIRSTNAME, LASTNAME and SMS are Brevo defaults; CITY, JOB_TITLE, ENTREPRISE, TELEPHONE,
-  // ACCOMPAGNANT, SOURCE_INVITATION and INVITE_TOKEN_UTILISE must exist as "Text" attributes
-  // in Brevo (Contacts > Settings > Contact attributes).
+function buildAttributes(contact: EventContact, withSms: boolean): Record<string, string> {
+  // FIRSTNAME, LASTNAME and SMS are Brevo defaults; CITY, JOB_TITLE, ENTREPRISE and
+  // TELEPHONE must exist as "Text" attributes in Brevo (Contacts > Settings > Contact attributes).
   const attributes: Record<string, string> = {
     FIRSTNAME: contact.firstName,
     LASTNAME: contact.lastName,
@@ -44,10 +40,6 @@ export function buildAttributes(contact: EventContact, withSms: boolean): Record
     ENTREPRISE: contact.company,
     TELEPHONE: contact.phone,
   }
-  // Optional values are only sent when present, so a later registration never erases them.
-  if (contact.companion) attributes.ACCOMPAGNANT = contact.companion
-  if (contact.invitationSource) attributes.SOURCE_INVITATION = contact.invitationSource
-  if (contact.invitationToken) attributes.INVITE_TOKEN_UTILISE = contact.invitationToken
   const sms = withSms ? toInternationalPhone(contact.phone) : null
   if (sms) attributes.SMS = sms
   return attributes

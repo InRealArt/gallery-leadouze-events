@@ -111,23 +111,15 @@ export default function MentionsLegalesPage() {
               {publisher.name}, {publisher.address}.
             </p>
             <p>
-              <strong className="font-medium text-gallery-900">Données collectées&nbsp;:</strong> via le formulaire
-              d&apos;inscription, vos nom, prénom, adresse e-mail professionnelle, numéro de téléphone,
-              entreprise, ville, activité ou profession et, si vous le renseignez, le nom de votre accompagnant.
+              <strong className="font-medium text-gallery-900">Données collectées&nbsp;:</strong> via le formulaire de
+              demande d&apos;invitation, vos nom, prénom, adresse e-mail professionnelle, numéro de téléphone,
+              entreprise, ville et activité ou profession.
             </p>
             <p>
               <strong className="font-medium text-gallery-900">Finalités et base légale&nbsp;:</strong> traiter votre
-              inscription, gérer la liste des invités et vous communiquer les informations pratiques liées
+              demande d&apos;invitation, gérer la liste des invités et vous communiquer les informations pratiques liées
               à l&apos;événement, sur la base de l&apos;exécution de mesures précontractuelles prises à votre demande et
               de notre intérêt légitime à organiser l&apos;événement.
-            </p>
-            <p>
-              <strong className="font-medium text-gallery-900">Invitations par e-mail&nbsp;:</strong> nous pouvons vous
-              adresser une invitation à cet événement à votre adresse professionnelle, obtenue depuis des sources
-              publiques, en lien avec vos fonctions et sur la base de notre intérêt légitime. Un identifiant
-              d&apos;invitation, qui ne contient aucune donnée personnelle, permet de reconnaître une inscription issue
-              d&apos;un e-mail et d&apos;arrêter les relances. Vous pouvez vous y opposer à tout moment grâce au lien de
-              désinscription présent dans chaque message.
             </p>
             <p>
               <strong className="font-medium text-gallery-900">Destinataires&nbsp;:</strong> les équipes

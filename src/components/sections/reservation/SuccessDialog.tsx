@@ -45,10 +45,10 @@ export function SuccessDialog({ open, onClose }: SuccessDialogProps) {
           <span aria-hidden="true" className="block w-10 h-px bg-accent-gold mx-auto mb-8" />
 
           <h2 id="success-dialog-title" className="text-3xl font-serif-title text-gallery-900">
-            Merci pour votre inscription
+            Merci pour votre demande
           </h2>
           <p className="text-sm text-gray-600 font-light leading-relaxed mt-5">
-            Votre inscription est bien enregistrée. Un email de confirmation vous est envoyé.
+            Votre demande d&apos;invitation a bien été transmise. Nos équipes reviendront vers vous sous 24h.
           </p>
 
           <div className="mt-8 pt-6 border-t border-gray-100">
