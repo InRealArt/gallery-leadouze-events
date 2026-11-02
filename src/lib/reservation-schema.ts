@@ -3,6 +3,7 @@ import * as z from "zod"
 const PHONE_PATTERN = /^\+?[\d\s.\-()]+$/
 const MIN_PHONE_DIGITS = 8
 const MAX_PHONE_DIGITS = 15
+const INVITATION_TOKEN_PATTERN = /^[A-Za-z0-9_-]{16,64}$/
 
 function requiredText(missingMessage: string, max = 100) {
   return z
@@ -26,6 +27,15 @@ export const reservationSchema = z.object({
   company: requiredText("L'entreprise est obligatoire."),
   city: requiredText("La ville est obligatoire."),
   profession: requiredText("L'activité ou la profession est obligatoire."),
+  companion: z
+    .string()
+    .trim()
+    .max(100, "100 caractères maximum.")
+    .optional()
+    .transform((value) => value || undefined),
+  // Taken from the invitation link: a tampered value must never block a registration.
+  invitationSource: z.enum(["pro", "presse"]).optional().catch(undefined),
+  invitationToken: z.string().regex(INVITATION_TOKEN_PATTERN).optional().catch(undefined),
 })
 
 export type ReservationInput = z.infer<typeof reservationSchema>

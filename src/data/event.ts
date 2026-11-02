@@ -132,8 +132,8 @@ export const faqItems: FaqItem[] = [
       "En vertu de l'article 238bis AB du Code Général des Impôts, l'acquisition d'une œuvre d'un artiste vivant permet à une entreprise de déduire 100 % du prix d'achat de son résultat imposable sur 5 ans. Pour les particuliers, les œuvres d'art sont totalement exclues de l'assiette de l'IFI.",
   },
   {
-    question: "Comment faire une demande d'invitation pour la soirée privée ?",
+    question: "Comment m'inscrire à la soirée privée ?",
     answer:
-      "Il suffit d'effectuer une demande d'accès via le formulaire en ligne. Une invitation nominative vous sera adressée après validation par nos équipes.",
+      "Il suffit de remplir le formulaire en ligne. Votre inscription est immédiate et un email de confirmation vous est envoyé.",
   },
 ]
