@@ -134,6 +134,6 @@ export const faqItems: FaqItem[] = [
   {
     question: "Comment m'inscrire à la soirée privée ?",
     answer:
-      "Il suffit de remplir le formulaire en ligne. Votre inscription est immédiate et un email de confirmation vous est envoyé.",
+      "Il suffit de remplir le formulaire en ligne. Notre équipe revient ensuite vers vous pour vous adresser une invitation nominative, en fonction des places disponibles.",
   },
 ]

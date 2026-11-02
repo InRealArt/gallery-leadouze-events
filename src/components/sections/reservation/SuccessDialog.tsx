@@ -48,7 +48,8 @@ export function SuccessDialog({ open, onClose }: SuccessDialogProps) {
             Merci pour votre inscription
           </h2>
           <p className="text-sm text-gray-600 font-light leading-relaxed mt-5">
-            Votre inscription est bien enregistrée. Un email de confirmation vous est envoyé.
+            Nous avons bien reçu votre inscription. Notre équipe revient vers vous prochainement pour vous adresser
+            votre invitation, en fonction des places disponibles.
           </p>
 
           <div className="mt-8 pt-6 border-t border-gray-100">

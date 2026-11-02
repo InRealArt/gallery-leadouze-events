@@ -117,8 +117,8 @@ export default function MentionsLegalesPage() {
             </p>
             <p>
               <strong className="font-medium text-gallery-900">Finalités et base légale&nbsp;:</strong> traiter votre
-              inscription, gérer la liste des invités et vous communiquer les informations pratiques liées
-              à l&apos;événement, sur la base de l&apos;exécution de mesures précontractuelles prises à votre demande et
+              inscription, procéder à sa validation par nos équipes, vous adresser votre invitation nominative, gérer
+              la liste des invités et vous communiquer les informations pratiques liées à l&apos;événement, sur la base de l&apos;exécution de mesures précontractuelles prises à votre demande et
               de notre intérêt légitime à organiser l&apos;événement.
             </p>
             <p>
